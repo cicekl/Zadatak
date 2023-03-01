@@ -15,7 +15,7 @@ import jakarta.persistence.MappedSuperclass;
  */
 
 @MappedSuperclass
-abstract class Entitet {
+public abstract class Entitet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer ID;
