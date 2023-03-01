@@ -4,7 +4,9 @@
 
 package ugovor;
 
+import ugovor.controller.ObradaKorisnik;
 import ugovor.model.Korisnik;
+import ugovor.util.OfirException;
 import ugovor.util.ProbniPodatci;
 
 /**
@@ -16,11 +18,21 @@ public class Start {
     public static void main(String[] args) {
        
         //ProbniPodatci.izvedi();
+        
+        ObradaKorisnik ok = new ObradaKorisnik();
+        
+        
         Korisnik k = new Korisnik();
         k.setIme("11Ado");
         k.setIBAN("HR13134358732989432");
         k.setPrezime("Markovic");
         k.setUlica("New Street");
         k.setKucniBroj("27"); 
+        try {
+            ok.create();
+        } catch (OfirException e) {
+            System.out.println(e.getPoruka()
+            );
+        }
     }
 }
