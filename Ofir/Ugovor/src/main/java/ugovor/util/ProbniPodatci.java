@@ -49,14 +49,16 @@ public class ProbniPodatci {
             k.setIBAN(faker.business().creditCardNumber());
             k.setUlica(faker.address().streetAddress());
             k.setKucniBroj(faker.address().streetAddressNumber());
+            k.setOIB(DovlacenjeOIBA.dovuciOib());
             session.persist(k);
             korisnik.add(k);
             }
     }
 
     private void kreirajUgovor() {
-        Ugovor u = new Ugovor();
+        Ugovor u;
         for(int i=0;i<5;i++) {
+           u = new Ugovor();
         u.setBrojUgovora(faker.number().digits(6));
         u.setCijena(new BigDecimal(faker.number().randomNumber()));
         u.setCijenaSlovima(faker.animal().name());

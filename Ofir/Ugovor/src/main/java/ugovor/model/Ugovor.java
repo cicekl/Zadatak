@@ -21,6 +21,7 @@ public class Ugovor extends Entitet{
     private String cijenaSlovima;
     private String nazivProjekta;
     private Date datum;
+    
 
     public String getBrojUgovora() {
         return brojUgovora;
