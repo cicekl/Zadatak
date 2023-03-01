@@ -32,7 +32,7 @@ public class Start {
             ok.create();
         } catch (OfirException e) {
             System.out.println(e.getPoruka()
-            );
+            ); 
         }
     }
 }
