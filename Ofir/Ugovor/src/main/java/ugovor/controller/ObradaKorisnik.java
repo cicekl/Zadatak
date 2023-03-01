@@ -13,7 +13,7 @@ import ugovor.util.OfirException;
  *
  * @author Korisnik
  */
-public class ObradaKorisnik  extends Obrada<Korisnik>  {
+public class ObradaKorisnik extends Obrada<Korisnik> {
 
     @Override
     public List<Korisnik> čitanje() {
@@ -23,41 +23,50 @@ public class ObradaKorisnik  extends Obrada<Korisnik>  {
     @Override
     protected void kontrolaUnos() throws OfirException {
         kontrolaImePrezime();
-        
+
     }
 
     @Override
     protected void kontrolaPromjena() throws OfirException {
-        
+        kontrolaImePrezimeNull();
     }
 
     @Override
     protected void kontrolaBrisanje() throws OfirException {
-        
+
     }
-    
-    private void konrolaOib() throws OfirException{
-        if(!DovlacenjeOIBA.kontrolaOIB((entitet.getOIB()))){
+
+    private void konrolaOib() throws OfirException {
+        if (!DovlacenjeOIBA.kontrolaOIB((entitet.getOIB()))) {
             throw new OfirException("Oib nije u dobrom formatu");
-        
+
         }
     }
 
-    private void kontrolaImePrezime() throws OfirException{
-        
+    private void kontrolaImePrezime() throws OfirException {
+
         boolean broj = false;
-        
+
         try {
             Double.parseDouble(entitet.getIme());
             Double.parseDouble(entitet.getPrezime());
             broj = true;
         } catch (Exception e) {
-            
+
         }
-        if(broj){
+        if (broj) {
             throw new OfirException("Ime i prezime ne moze sadrzavati brojeve");
+        }
+
+    }
+
+    private void kontrolaImePrezimeNull() throws OfirException {
+        if (entitet.getIme() == null || entitet.getPrezime() == null) {
+            throw new OfirException("Ime i prezime ne smije biti prazno");
         }
         
     }
     
+   
+
 }
