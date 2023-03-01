@@ -87,11 +87,26 @@ public class ObradaUgovor extends Obrada<Ugovor> {
     
     }
 
-    private void kontrolaNazivBroj() {
+    private void kontrolaNazivBroj() throws OfirException {
         
-
+         boolean kontrola=false;
+        
+        try {
+            Double.parseDouble(entitet.getNazivProjekta());
+            kontrola=true;
+            
+        } catch (Exception e) {
+            
+        }
+        
+        if(kontrola){
+            throw new OfirException("Naziv projekta ne smije biti broj!");
+        }
+        
+    }
+        
     }
     
     
     
-}
+

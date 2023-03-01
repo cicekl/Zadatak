@@ -23,11 +23,11 @@ public class Start {
         
         
         Korisnik k = new Korisnik();
-        k.setIme("11Ado");
         k.setIBAN("HR13134358732989432");
         k.setPrezime("Markovic");
         k.setUlica("New Street");
         k.setKucniBroj("27"); 
+        ok.setEntitet(k);
         try {
             ok.create();
         } catch (OfirException e) {
