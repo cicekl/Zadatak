@@ -22,7 +22,8 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
 
     @Override
     protected void kontrolaUnos() throws OfirException {
-        kontrolaImePrezime();
+        kontrolaIme();
+        kontrolaPrezime();
 
     }
 
@@ -43,19 +44,35 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
         }
     }
 
-    private void kontrolaImePrezime() throws OfirException {
+    private void kontrolaIme() throws OfirException {
 
         boolean broj = false;
 
         try {
             Double.parseDouble(entitet.getIme());
-            Double.parseDouble(entitet.getPrezime());
+            
             broj = true;
         } catch (Exception e) {
 
         }
         if (broj) {
-            throw new OfirException("Ime i prezime ne moze sadrzavati brojeve");
+            throw new OfirException("Ime ne moze biti broj");
+        }
+
+    }
+    private void kontrolaPrezime() throws OfirException {
+
+        boolean broj = false;
+
+        try {
+            Double.parseDouble(entitet.getPrezime());
+            
+            broj = true;
+        } catch (Exception e) {
+
+        }
+        if (broj) {
+            throw new OfirException("Prezime ne moze biti broj");
         }
 
     }
