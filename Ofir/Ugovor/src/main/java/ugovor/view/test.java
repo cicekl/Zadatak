@@ -8,12 +8,12 @@ package ugovor.view;
  *
  * @author Korisnik
  */
-public class Test extends javax.swing.JFrame {
+public class test extends javax.swing.JFrame {
 
     /**
      * Creates new form test
      */
-    public Test() {
+    public test() {
         initComponents();
     }
 

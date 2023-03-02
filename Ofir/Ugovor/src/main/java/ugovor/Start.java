@@ -12,7 +12,7 @@ import ugovor.util.ProbniPodatci;
 import ugovor.view.PregledUgovora;
 import ugovor.view.PrikazUgovora;
 import ugovor.view.Prozor;
-import ugovor.view.Test;
+import ugovor.view.test;
 
 
 /**
@@ -34,7 +34,7 @@ public class Start {
                 
                 break;
             case 2:
-                new Test().setVisible(true);
+                new test().setVisible(true);
                 break;
                 
         }
