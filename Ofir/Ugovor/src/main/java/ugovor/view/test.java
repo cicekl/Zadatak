@@ -506,6 +506,202 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 " ");
         }
+if(itemText.equals("dokument2")){
+ txtPolje.setText("MINISTARSTVO PODUZETNIŠTVA I OBRTA, OIB: 53478826580, Ulica grada Vukovara 78, 10000\n" +
+"Zagreb, zastupano po Darku Horvatu, ministru (u daljnjem tekstu: Ministarstvo) i\n" +
+"<ime> <prezime>, OIB: <oib>, <adresa> <kucniBroj> (u daljnjem tekstu: Korisnik), zastupan\n" +
+" po zakonskom zastupniku/roditelju ili skrbniku, zaključuju\n" +
+"\n" +
+"\n" +
+"UGOVOR O DODJELI BESPOVRATNE POTPORE\n" +
+"UGOVOR br. <brojUgovora>\n" +
+"\n" +
+"\n" +
+"Članak 1.\n" +
+"\n" +
+"Ovim Ugovorom uređuju se međusobna prava i obveze ugovornih strana u vezi dodjele \n" +
+"bespovratne potpore odobrene u okviru Otvorenog javnog poziva za Projekt „Stipendiranje \n" +
+"učenika u obrtničkim zanimanjima“, KLASA: 311-01/16-01/172, URBROJ: 516-04-02-01-02/1-15-18 \n" +
+"od 1. kolovoza 2016. godine (dalje u tekstu: Javni poziv).\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 2.\n" +
+"\n" +
+"Ovim Ugovorom Ministarstvo dodjeljuje Korisniku poticajna, namjenska i bespovratna sredstva\n" +
+" u najvišem iznosu do <cijena> kn (slovima: <cijenaSlovima>) (u daljnjem tekstu: odobrena \n" +
+"sredstva) za stipendiju učeniku koji se obrazuje za deficitarno obrtničko zanimanje, pod \n" +
+"uvjetima i sukladno kriterijima navedenim u Javnom pozivu i ovom Ugovoru, a za sufinanciranje \n" +
+"koje je Korisnik prijavio na temelju Javnog poziva.\n" +
+"\n" +
+"Mjesečni iznos stipendije iznosi 750,00 kn (sedamstopedeset kuna) te je navedeni iznos \n" +
+"Korisnik dužan namjenski koristiti za školovanje. \n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 3.\n" +
+"\n" +
+"Korisnik se obvezuje redovito savladavati propisano školsko gradivo bez ponavljanja razreda, \n" +
+"a Ministarstvo se obvezuje isplaćivati stipendiju u razdoblju od 1. rujna 2016. \n" +
+"(prvog rujna dvijetisućešesnaeste) do 31. kolovoza 2017. (tridesetprvog kolovoza dvijetisućesedamnaeste) \n" +
+"godine.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 4.\n" +
+"\n" +
+"Odobrena sredstva iz članka 2. ovog Ugovora isplaćuju se u dva obroka:\n" +
+"I razdoblje: rujan - prosinac 2016. godine,\n" +
+"II razdoblje: siječanj - kolovoz 2017. godine.\n" +
+"\n" +
+"Prvi dio odobrenih sredstava isplatiti će se na žiro-račun Korisnika broj <iban> nakon što \n" +
+"Korisnik dostavi Ministarstvu potpisani Ugovor i ispunjeni Obrazac 1. „Podaci o sudionicima“ i \n" +
+"to u roku od 15 radnih dana od dana zaprimanja istih u Ministarstvu.\n" +
+"Drugi dio odobrenih sredstava isplatiti će se u tijeku prvog kvartala 2016. godine.\n" +
+" \n" +
+"Prije isplate, Ministarstvo će izvršiti provjeru da li je žiro-račun Korisnika u blokadi te u \n" +
+"slučaju utvrđenja blokade računa, Ministarstvo neće izvršiti isplatu i oslobađa se obveze isplate odobrenih sredstava.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 5.\n" +
+"\n" +
+"Korisnik se obvezuje, pismeno izvijestiti Ministarstvo o svim promjenama relevantnim za odredbe \n" +
+"ovoga Ugovora (adresa prebivališta, dugotrajna bolest, ispis iz škole, ponavljanje razreda i slično) \n" +
+"u roku od 30 dana od nastale promjene.\n" +
+"\n" +
+"Ukoliko Korisnik bez opravdanog razloga ne ispuni obavezu iz stavka 1. ovoga članka, gubi pravo \n" +
+"na stipendiju te je isti dužan vratiti do tada primljeni iznos stipendije.\n" +
+"\n" +
+"U trenutku potpisivanja ovog Ugovora kao i za vrijeme trajanja istog, Korisnik ne smije biti \n" +
+"primatelj niti jedne druge stipendije ili kredita kao pomoć za školovanje.\n" +
+"Ukoliko Korisnik u trenutku potpisivanja ovog Ugovora kao i za vrijeme trajanja istog, primi \n" +
+"stipendiju ili kredit, gubi pravo na stipendiju te je dužan vratiti do tada primljeni iznos stipendije.\n" +
+"\n" +
+"Korisnik je dužan u roku od 30 dana od dana završetka školske godine, odnosno najkasnije do 30. rujna 2017. \n" +
+"godine Ministarstvu dostaviti dokaz o opravdanosti korištenja sredstava (svjedodžba) i ispunjeni Obrazac \n" +
+"2. „Podaci nakon završetka aktivnosti“.\n" +
+"Ispunjenje obveze u navedenom roku je bitan sastojak Ugovora.\n" +
+"\n" +
+"Zahtjev Korisnika za produljenje ugovorenog roka za dostavu dokaza o namjenskom utrošku dodijeljenih \n" +
+"sredstava Ministarstvu može se podnijeti najkasnije 30 dana prije isteka ugovorenog roka, u suprotnom \n" +
+"se neće uzeti u razmatranje.\n" +
+"\n" +
+"Na pisani zahtjev Korisnika, Ministarstvo može, kada za to postoje objektivno opravdani razlozi, \n" +
+"produljiti rok iz stavka 2. ovog članka.\n" +
+"\n" +
+"U slučaju da Korisnik ne postupi sukladno stavcima 2., 3., 4. i 5. ovog članka, Ugovor će se smatrati \n" +
+"raskinutim te će se u tom slučaju primijeniti članak 7. ovog Ugovora.\n" +
+"\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 6.\n" +
+"\n" +
+"U svrhu provođenja kontrole namjenskog korištenja sredstava Ministarstvo poduzetništva i obrta \n" +
+"je ovlašteno izvršiti provjeru korištenja odobrenih sredstava uvidom u dokumentaciju na temelju \n" +
+"koje je ostvarena potpora.\n" +
+"\n" +
+"Potpisom ovog Ugovora, Korisnik daje izričitu suglasnost Ministarstvu da može u bilo kojem \n" +
+"trenutku izvršiti uvid u statusnu i svu drugu dodatnu dokumentaciju koja se odnosi na Korisnika \n" +
+"i Projekt, a u svrhu provjere realizacije iste i istinitosti podataka koje je Korisnik naznačio \n" +
+"u Prijavnom obrascu STIPENDIRANJE/2016 i izjavama koje je priložio uz Prijavni obrazac \n" +
+"STIPENDIRANJE/2016. Korisnik se obvezuje na zahtjev Ministarstva dostaviti traženu dokumentaciju.\n" +
+"\n" +
+"U slučaju da Korisnik ne omogući Ministarstvu provedbu kontrole namjenskog korištenja sredstava, \n" +
+"dužan je izvršiti povrat isplaćenih sredstava s pripadajućim zakonskim zateznim kamatama u korist \n" +
+"Državnog proračuna na način i u roku utvrđenom u članku 7. stavku 1. ovog Ugovora.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 7.\n" +
+"\n" +
+"U slučaju da Ministarstvo utvrdi nenamjensko korištenje sredstava, kao i u slučaju da Ministarstvo\n" +
+" naknadnom provjerom utvrdi drugačije stanje u odnosu na ono koje je bilo osnova za odobrenje\n" +
+" \n" +
+"sredstava iz članka 2. ovog Ugovora, tj. ako Ministarstvo utvrdi da podaci iz Prijavnog obrasca \n" +
+"STIPENDIRANJE/2016 koje je unio Korisnik te podaci iz izjava koje je Korisnik potpisao i priložio uz \n" +
+"Prijavni obrazac STIPENDIRANJE/2016 ne odgovaraju stanju koje je Ministarstvo utvrdilo naknadnom \n" +
+"provjerom u dokumentaciji i/ili na terenu, Korisnik je obvezan isplaćena sredstva s pripadajućim \n" +
+"zakonskim zateznim kamatama vratiti u Državni proračun Republike Hrvatske u roku od 15 dana od dana \n" +
+"zaprimanja Odluke o povratu sredstava.\n" +
+"Zakonska zatezna kamata će se računati od dana primitka isplate.\n" +
+"Ukoliko se dostava Odluke o povratu sredstava na adresu Korisnika iz ovog Ugovora ne obavi, dostava \n" +
+"odluke se smatra obavljenom istekom osmoga dana od stavljanja pismena na oglasnu ploču Ministarstva.\n" +
+"\n" +
+"Ako se utvrdi nenamjensko korištenje sredstava, Korisnik će biti uvršten na popis korisnika koji \n" +
+"nisu namjenski koristili sredstva a koji će biti javno objavljen na mrežnim stranicama Ministarstva \n" +
+"poduzetništva i obrta.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 8.\n" +
+"\n" +
+"Potpisom ovog Ugovora Korisnik se obvezuje na izvršenje svih obveza predviđenih u Javnom pozivu\n" +
+" i sve obveze iz ovog Ugovora.\n" +
+"\n" +
+"Ministarstvo će jednostrano raskinuti Ugovor ukoliko Korisnik iz bilo kojeg razloga prestane \n" +
+"izvršavati obvezu iz točke 1. ovoga članka.\n" +
+"\n" +
+"Ovim Ugovorom Ministarstvo pridržava pravo na povrat sredstava isplaćenih na ime stipendije u \n" +
+"slučaju da Korisnik redovito ne savladava propisano školsko gradivo bez ponavljanja razreda.\n" +
+"Korisnik koji ponavlja razred gubi pravo na stipendiju te je dužan vratiti do tada primljeni iznos stipendije.\n" +
+"\n" +
+"Ukoliko Korisnik napusti ili prekine školovanje, svojevoljno ili po izrečenoj stegovnoj mjeri, \n" +
+"Ministarstvo će raskinuti Ugovor te je dužan vratiti cjelokupni primljeni iznos stipendije.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 9.\n" +
+"\n" +
+"Jedan potpisani primjerak Ugovora Korisnik je dužan dostaviti Ministarstvu u roku od 15 dana \n" +
+"od primitka ovog Ugovora.\n" +
+"\n" +
+"Ovaj Ugovor neće imati pravni učinak niti će obvezivati Ministarstvo, ukoliko Korisnik u roku iz \n" +
+"stavka 1. ovog članka ne dostavi Ministarstvu potpisani primjerak Ugovora.\n" +
+"U navedenom slučaju smatrati će se da je Korisnik odustao od prijave za dodjelu sredstava.\n" +
+"\n" +
+"\n" +
+"\n" +
+"Članak 10.\n" +
+"\n" +
+"Korisnik potpisom ovog Ugovora daje pristanak da Ministarstvo prikuplja, obrađuje i koristi podatke\n" +
+" iz ovog Ugovora, kao i podatke iz cjelokupne suradnje ostvarene s Korisnikom u svrhu promidžbenih \n" +
+"aktivnosti Ministarstva poduzetništva i obrta te pristaje na sudjelovanje u medijskom praćenju provedbe\n" +
+" Projekta (intervju, snimanje i sl.).\n" +
+"\n" +
+"Korisnik svojim potpisom ovog Ugovora pristaje na javnu objavu svojih podataka te objavu podataka \n" +
+"iz članka 7. stavak 3. ovog Ugovora.\n" +
+"\n" +
+"\n" +
+" \n" +
+"Članak 11.\n" +
+"\n" +
+"Stranke će sve eventualne sporove rješavati sporazumno.\n" +
+"U slučaju da se ne postigne sporazum, ugovara se nadležnost stvarno nadležnog suda u Zagrebu.\n" +
+"\n" +
+"Članak 12.\n" +
+"\n" +
+"Ovaj Ugovor stupa na snagu danom kad ga potpišu obje strane.\n" +
+"Ovaj Ugovor sastavljen je u 2 (dva) primjerka, od kojih svaka ugovorna strana zadržava po 1 (jedan) \n" +
+"primjerak.\n" +
+"\n" +
+"\n" +
+"ZA MINISTARSTVO		ZA KORISNIKA\n" +
+"ministar			roditelj/staratelj\n" +
+"\n" +
+" \n" +
+"Darko Horvat			(ime i prezime)\n" +
+"\n" +
+"\n" +
+"______________________		________________________\n" +
+"\n" +
+"\n" +
+"\n" +
+"Datum potpisa:			Datum potpisa:\n" +
+"");
+  
+}       
     }//GEN-LAST:event_btnDohvatiActionPerformed
 
     /**
