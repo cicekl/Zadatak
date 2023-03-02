@@ -5,6 +5,7 @@ ugovor\view\PrikazUgovora.class
 ugovor\util\ProbniPodatci.class
 ugovor\view\Prozor$1.class
 ugovor\util\DovlacenjeOIBA.class
+ugovor\view\PregledUgovora$1.class
 ugovor\view\Prozor.class
 ugovor\Start.class
 ugovor\util\OfirException.class
