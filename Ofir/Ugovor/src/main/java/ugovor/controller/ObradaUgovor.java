@@ -24,8 +24,9 @@ public class ObradaUgovor extends Obrada<Ugovor> {
     protected void kontrolaUnos() throws OfirException {
         kontrolaBrojaUgovora();
         kontrolaCijene();
+        kontrolaCijeneSlovima();
         kontrolaNazivaProjekta();
-        
+        kontrolaDatuma();
     }
 
     @Override
@@ -101,7 +102,19 @@ public class ObradaUgovor extends Obrada<Ugovor> {
         }
         
     }
+
+    private void kontrolaDatuma() {
         
+    }
+
+    private void kontrolaCijeneSlovima() {
+        
+        
+    }
+
+        
+    
+    
     }
     
 
