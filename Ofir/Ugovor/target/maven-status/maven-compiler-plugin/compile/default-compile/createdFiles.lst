@@ -1,0 +1,12 @@
+ugovor\model\Entitet.class
+ugovor\controller\Obrada.class
+ugovor\view\PrikazUgovora.class
+ugovor\util\ProbniPodatci.class
+ugovor\util\DovlacenjeOIBA.class
+ugovor\Start.class
+ugovor\util\OfirException.class
+ugovor\controller\ObradaUgovor.class
+ugovor\model\Korisnik.class
+ugovor\model\Ugovor.class
+ugovor\controller\ObradaKorisnik.class
+ugovor\util\HibernateUtil.class

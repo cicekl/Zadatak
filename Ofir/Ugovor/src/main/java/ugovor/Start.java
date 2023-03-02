@@ -24,7 +24,7 @@ public class Start {
         
         Korisnik k = new Korisnik();
         k.setIBAN("HR13134358732989432");
-        k.setPrezime("Markovic");
+        k.setPrezime("Marko4vic");
         k.setUlica("New Street");
         k.setKucniBroj("27"); 
         ok.setEntitet(k);

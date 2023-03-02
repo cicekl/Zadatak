@@ -23,7 +23,9 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
     @Override
     protected void kontrolaUnos() throws OfirException {
         kontrolaIme();
+        kontrolaBrojIme();
         kontrolaPrezime();
+        kontrolaBrojPrezime();
         kontrolaImePrezimeNull();
 
     }
@@ -84,6 +86,49 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
         }
         
     }
+
+    private void kontrolaBrojIme() throws OfirException {
+       
+        boolean kontrola=false;
+        
+        try {
+            
+            for(int i=0;i<entitet.getIme().length();i++) {
+                if(entitet.getIme().charAt(i)>'A' || entitet.getIme().charAt(i) < 'z') {
+                    kontrola = true;
+                }
+            }
+            
+        }catch(Exception e) {
+            
+        }
+        
+        if(!kontrola) {
+            throw new OfirException("Ime i prezime moraju sadržavati samo slova!");
+        }
+    }
+
+    private void kontrolaBrojPrezime() throws OfirException {
+        boolean kontrola=false;
+        
+        try {
+            
+            for(int i=0;i<entitet.getPrezime().length();i++) {
+                if(entitet.getPrezime().charAt(i)>'A' || entitet.getPrezime().charAt(i) < 'z') {
+                    kontrola = true;
+                }
+            }
+            
+        }catch(Exception e) {
+            
+        }
+        
+        if(!kontrola) {
+            throw new OfirException("Ime i prezime moraju sadržavati samo slova!");
+        }
+        
+    }
+    
     
    
 
