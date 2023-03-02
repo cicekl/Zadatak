@@ -94,21 +94,13 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 " \n" +
 "\n" +
-" \n" +
-"\n" +
 "U G O V O R br. <brojUgovora> \n" +
-"\n" +
-" \n" +
 "\n" +
 "o sufinanciranju projekata udruga u turizmu u 2022.  \n" +
 "\n" +
 " \n" +
 "\n" +
-" \n" +
-"\n" +
 "Članak 1. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Na temelju provedenog Javnog natječaja za sufinanciranje projekata udruga u turizmu  \n" +
 "\n" +
@@ -121,34 +113,22 @@ public class Test extends javax.swing.JFrame {
 " u glavi 05 pod šifrom P3208 aktivnost 587014, konto 3811 – Tekuće donacije u novcu iznos od  \n" +
 "\n" +
 " \n" +
-"\n" +
-" \n" +
-"\n" +
 "<cijena>  kuna  \n" +
 "\n" +
 " \n" +
-"\n" +
-" \n" +
-"\n" +
 "(slovima: <cijenaSlovima>) \n" +
 "\n" +
 " \n" +
 "\n" +
 "za financijsku potporu projekta pod nazivom \n" +
 "\n" +
-" \n" +
-"\n" +
 "„ <nazivProjekta> “ \n" +
 "\n" +
 " \n" +
-"\n" +
 "s rokom izvršenja prema prijavi projekta, a najkasnije do <datumNajkasnije> 2022. godine. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Članak 2. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Sredstva iz članka 1. ovog ugovora mogu se koristiti isključivo za provedbu projekta sukladno \n" +
 "\n" +
@@ -160,8 +140,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 3. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Dostavljeni Obrazac opisa projekta i Obrazac proračuna projekta s pripadajućom dokumentacijom \n" +
 "\n" +
 " koju je Korisnik dostavio prijavljujući se na Javni natječaj, sastavni su dio ovog ugovora. \n" +
@@ -169,8 +147,6 @@ public class Test extends javax.swing.JFrame {
 " \n" +
 "\n" +
 "Članak 4.  \n" +
-"\n" +
-" \n" +
 "\n" +
 "Ministarstvo će sredstva iz članka 1. ovog ugovora isplatiti na žiroračun Korisnika IBAN <iban>, \n" +
 "\n" +
@@ -182,8 +158,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 5.  \n" +
 "\n" +
-" \n" +
-"\n" +
 "Radi kontrole namjenskog korištenja sredstava Korisnik se obvezuje da će Ministarstvu  \n" +
 "\n" +
 "dostaviti Privremeno izvješće (na propisanom obrascu) o tijeku provedbe projekta..  \n" +
@@ -194,19 +168,14 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Ministarstva: \n" +
 "\n" +
-" \n" +
-"\n" +
 "a)Obrazac opisnog izvještaja (na propisanom obrascu, ispunjenom na računalu) u papirnatom \n" +
 "\n" +
 " obliku i elektroničkom obliku (CD/USB i sl.)   \n" +
 "\n" +
 " \n" +
-"\n" +
 "b)Obrazac financijskog izvještaja (na propisanom obrascu, ispunjenom na računalu) u  \n" +
 "\n" +
-"papirnatom i elektroničkom obliku (CD/USB i sl.) uz detaljno dokumentiranje ukupnih troškova projekta \n" +
-"\n" +
-" \n" +
+"papirnatom i elektroničkom obliku (CD/USB i sl.) uz detaljno dokumentiranje ukupnih troškova projekta: \n" +
 "\n" +
 "•za bezgotovinska plaćanja - preslike računa (R1 ili R2) koji glase na Korisnika  \n" +
 "\n" +
@@ -223,9 +192,6 @@ public class Test extends javax.swing.JFrame {
 "•priloge vezane uz provedbu projekta (listu sudionika, program provedbe aktivnosti i dr. \n" +
 "\n" +
 " \n" +
-"\n" +
-" \n" +
-"\n" +
 "c)obrazac s podacima o stavkama nastalih troškova u razdoblju obuhvaćenom izvještajem  \n" +
 "\n" +
 "(za svaku stavku potrebno je navesti naslov, iznos, relevantno proračunsko poglavlje projekta  \n" +
@@ -233,14 +199,11 @@ public class Test extends javax.swing.JFrame {
 "i poziv na dokument  kojim se trošak opravdava te broj izvoda o izvršenim plaćanjima) \n" +
 "\n" +
 " \n" +
-"\n" +
 "d)obrazac s opisom svih odstupanja u izvorima financiranja u odnosu na prijedlog koji je odobren \n" +
 "\n" +
 " \n" +
 "\n" +
 "Članak 6. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Ministarstvo pridržava pravo kontinuiranog praćenja i vrednovanja izvršenja projekta Korisnika  \n" +
 "\n" +
@@ -249,7 +212,6 @@ public class Test extends javax.swing.JFrame {
 "sufinanciranja te u razdoblju od 3 godine nakon završetka projekta. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Ministarstvo može neposrednu kontrolu iz prethodnog stavka ovog ugovora obaviti u prostorijama  \n" +
 "\n" +
 "Korisnika, te je o namjeri izvršenja neposredne kontrole dužan prethodno obavijestiti Korisnika  \n" +
@@ -257,7 +219,6 @@ public class Test extends javax.swing.JFrame {
 "barem tri dana prije planiranog izvršenja kontrole. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Korisnik je obavezan o datumu i mjestu održavanja projektnih aktivnosti  \n" +
 "\n" +
 "(seminari, radionice, sajmovi …) obavijestiti Ministarstvo najkasnije 15 dana prije održavanja,  \n" +
@@ -268,8 +229,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 7.  \n" +
 "\n" +
-" \n" +
-"\n" +
 "Korisnik ovlašćuje Ministarstvo da radi nadzora namjenskog korištenja sredstava iz članka 1.  \n" +
 "\n" +
 "ovog ugovora neposredno kontaktira sve pravne i fizičke osobe kojima je prema priloženoj  \n" +
@@ -277,7 +236,6 @@ public class Test extends javax.swing.JFrame {
 "dokumentaciji Korisnik isplatio novčana sredstva koja je dobio od Ministarstva u ime financijske potpore. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Davatelj će prikupljene podatke pravnih i fizičkih osoba iz članka 6., stavak 1. koristiti  \n" +
 "\n" +
 "isključivo u svrhu kontinuiranog (financijskog) praćenja i vrednovanja projekta i sukladno  \n" +
@@ -292,8 +250,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 8.\n" +
 "\n" +
-" \n" +
-"\n" +
 "Korisnik se obvezuje pravodobno izvijestiti Ministarstvo o eventualnim objektivnim smetnjama tijekom  \n" +
 "\n" +
 "realizacije projekta koje onemogućuju ili bitno mijenjaju opseg, vrstu planiranih aktivnosti i/ili  \n" +
@@ -303,7 +259,6 @@ public class Test extends javax.swing.JFrame {
 "proračuna, kako bi se mogle ugovoriti izmjene ugovornih obveza. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Manje izmjene ugovora mogu biti: \n" +
 "\n" +
 "-izmjene proračuna između proračunskih poglavlja manje od 15%, \n" +
@@ -324,13 +279,13 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Veće izmjene ugovora su:  \n" +
 "\n" +
-"-	izmjene proračuna između proračunskih poglavlja veće od 15%, \n" +
+"-izmjene proračuna između proračunskih poglavlja veće od 15%, \n" +
 "\n" +
-"-	produženje trajanja provedbe projekta (maksimalno do 6 mjeseci), \n" +
+"-produženje trajanja provedbe projekta (maksimalno do 6 mjeseci), \n" +
 "\n" +
-"-	dodatak novih aktivnosti u projekt, \n" +
+"-dodatak novih aktivnosti u projekt, \n" +
 "\n" +
-"-	promjena projektnih aktivnosti koja značajno utječe na opseg i ciljeve. \n" +
+"-promjena projektnih aktivnosti koja značajno utječe na opseg i ciljeve. \n" +
 "\n" +
 "Veće izmjene ugovora zahtijevaju izradu Dodatka ugovoru i njegovo potpisivanje od strane davatelja \n" +
 "\n" +
@@ -342,8 +297,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak  9. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Izmjene ugovornih obveza Korisnik može zatražiti najkasnije do  \n" +
 "\n" +
 "<datumIzmjene> 2023. godine odnosno 30 dana prije isteka roka izvršenja projekta. Svaka izmjena  \n" +
@@ -351,13 +304,11 @@ public class Test extends javax.swing.JFrame {
 "ugovornih obveza treba biti zatražena i odobrena u pisanom obliku. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Korisnik ne može zatražiti izmjene u provedbi projekta, produljenje roka provedbe ili prenamjenu  \n" +
 "\n" +
 "pojedinih stavki proračuna nakon navedenog roka iz stavka 1. ovog članka. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Zahtjev za prenamjenu dijela sredstava i/ili zahtjev za produženje roka provedbe projekta Korisnik \n" +
 "\n" +
 " dostavlja Ministarstvu u pisanom obliku s obrazloženjem i s prijedlogom novog obrasca proračuna  \n" +
@@ -365,7 +316,6 @@ public class Test extends javax.swing.JFrame {
 "provedbe projekta. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Ministarstvo ima pravo ne odobriti prenamjenu dijela sredstava i/ili produženje roka provedbe  \n" +
 "\n" +
 "projekta ukoliko se time bitno mijenja sadržaj i priroda projekta ili ako zahtjev nema utemeljenje  \n" +
@@ -374,11 +324,7 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 " \n" +
 "\n" +
-" \n" +
-"\n" +
 "Članak 10. \n" +
-"\n" +
-" \n" +
 "\n" +
 "U svrhu osiguranja povrata odobrenih sredstava, Korisnik će prilikom potpisivanja ovoga ugovora  \n" +
 "\n" +
@@ -387,7 +333,6 @@ public class Test extends javax.swing.JFrame {
 "iznosa sredstava.  \n" +
 "\n" +
 " \n" +
-"\n" +
 "Instrument osiguranja plaćanja iz stavka 1. ovoga članka Ministarstvo zadržava do izvršenja  \n" +
 "\n" +
 "obveza iz ovoga ugovora. \n" +
@@ -395,8 +340,6 @@ public class Test extends javax.swing.JFrame {
 " \n" +
 "\n" +
 "Članak 11. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Ako Ministarstvo utvrdi da je Korisnik nenamjenski koristio sredstva financijske potpore za  \n" +
 "\n" +
@@ -413,7 +356,6 @@ public class Test extends javax.swing.JFrame {
 "Ministarstva za povrat zaprimljenih sredstava. \n" +
 "\n" +
 " \n" +
-"\n" +
 "U slučaju da Korisnik ne postupi u skladu sa zahtjevom iz stavka 1. ovoga članka, Ministarstvo \n" +
 "\n" +
 " će aktivirati instrument osiguranja plaćanja iz članka 10. ovoga ugovora. \n" +
@@ -421,8 +363,6 @@ public class Test extends javax.swing.JFrame {
 " \n" +
 "\n" +
 "Članak 12.  \n" +
-"\n" +
-" \n" +
 "\n" +
 "Ministarstvo i Korisnik preuzimaju obvezu čuvanja svih dokumenata, podataka ili drugih  \n" +
 "\n" +
@@ -432,8 +372,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 13.  \n" +
 "\n" +
-" \n" +
-"\n" +
 "Ako Ministarstvo utvrdi da Korisnik nije ispunio ugovorne obveze, uskratit će pravo na financijsku \n" +
 "\n" +
 " potporu projekata i programa Korisnika u sljedeće dvije godine. \n" +
@@ -442,8 +380,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 14. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Korisnik se obvezuje na svim tiskanim, video i drugim materijalima vezanim uz projekt istaknuti \n" +
 "\n" +
 " logotip i naziv Ministarstva kao institucije koja sufinancira projekt koji je predmet ovog ugovora \n" +
@@ -451,7 +387,6 @@ public class Test extends javax.swing.JFrame {
 " te logotip pristupačnog turizma Ministarstva. \n" +
 "\n" +
 " \n" +
-"\n" +
 "Korisnik je suglasan da Ministarstvo koristi i objavljuje dostavljene mu fotografije, video i audio  \n" +
 "\n" +
 "zapise iz stavka 1. ovog članka u cilju promocije financijskih potpora, ilustracije razvoja civilnoga \n" +
@@ -462,8 +397,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 15. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Ministarstvo ne snosi odgovornost, neposrednu ili posrednu, za štete proizašle iz bilo koje aktivnosti  \n" +
 "\n" +
 "Korisnika u provedbi ugovorenog projekta. \n" +
@@ -471,8 +404,6 @@ public class Test extends javax.swing.JFrame {
 " \n" +
 "\n" +
 "Članak 16. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Potpisom ovog ugovora Korisnik se obvezuje da kao korisnik bespovratnih sredstava iz javnih izvora za \n" +
 "\n" +
@@ -488,8 +419,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 17. \n" +
 "\n" +
-" \n" +
-"\n" +
 "U slučaju da se spor u provedbi ovog ugovora između Ministarstva i Korisnika ne može riješiti  \n" +
 "\n" +
 "sporazumno, niti mirenjem, spor rješava stvarno nadležan sud u Zagrebu. \n" +
@@ -497,8 +426,6 @@ public class Test extends javax.swing.JFrame {
 " \n" +
 "\n" +
 "Članak 18. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Na elemente financiranja projekta koji nisu uređeni ovim ugovorom na odgovarajući se način  \n" +
 "\n" +
@@ -520,8 +447,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 20. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Za svaki oblik komunikacije (dostavu obavijesti o izmjenama i dopunama ugovora, dostavu izvještaja \n" +
 "\n" +
 " i sl.) koji je povezan s ovim ugovorom potrebno je navesti klasu, urudžbeni broj ugovora i naziv  \n" +
@@ -530,27 +455,11 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "za davatelja: Ministarstvo turizma i sporta, Prisavlje 14, Zagreb; e-mail: udruge@mints.hr, \n" +
 "\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
 "za korisnika: <ime> <prezime> , e-mail: <email>. \n" +
 "\n" +
 " \n" +
 "\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
 "Članak 21. \n" +
-"\n" +
-" \n" +
 "\n" +
 "Ovaj ugovor sastavljen je u tri (3) istovjetna primjerka, od kojih jedan (1) primjerak zadržava \n" +
 "\n" +
@@ -560,8 +469,6 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 "Članak 22. \n" +
 "\n" +
-" \n" +
-"\n" +
 "Ovaj ugovor stupa na snagu s danom kad ga potpiše posljednja ugovorna strana.  \n" +
 "\n" +
 " \n" +
@@ -570,41 +477,24 @@ public class Test extends javax.swing.JFrame {
 "\n" +
 " \n" +
 "\n" +
-" \n" +
+"ZA KORISNIKA 		ZA MINISTARSTVO \n" +
 "\n" +
-"ZA KORISNIKA 				ZA MINISTARSTVO \n" +
-"\n" +
-"Ministrica \n" +
+"<ime> <prezime>                       Ministrica dr.sc. Nikolina Brnjac \n" +
 "\n" +
 " \n" +
 "\n" +
 " \n" +
+"__________________________	      __________________________ \n" +
 "\n" +
-" \n" +
-"\n" +
-"__________________________	__________________________ \n" +
-"\n" +
-"dr.sc. Nikolina Brnjac \n" +
 "\n" +
 " \n" +
 "\n" +
 " \n" +
 "\n" +
 " \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
 "KLASA:		 \n" +
 "\n" +
 "URBROJ:	 \n" +
-"\n" +
-" \n" +
 "\n" +
 " \n" +
 "\n" +
@@ -613,12 +503,6 @@ public class Test extends javax.swing.JFrame {
 "- Obrazac opisa projekta (Prilog 1) \n" +
 "\n" +
 "- Obrazac proračuna projekta (Prilog 2) \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
-"\n" +
-" \n" +
 "\n" +
 " ");
         }
