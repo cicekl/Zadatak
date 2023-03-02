@@ -36,6 +36,7 @@ public class Start {
             case 2:
                 new Test().setVisible(true);
                 break;
+                
         }
         
         
