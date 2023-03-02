@@ -10,6 +10,8 @@ import ugovor.util.OfirException;
 import ugovor.util.ProbniPodatci;
 import ugovor.view.PrikazUgovora;
 import ugovor.view.Prozor;
+import ugovor.view.test;
+
 
 /**
  *
@@ -21,6 +23,11 @@ public class Start {
        
         //ProbniPodatci.izvedi();
         
-        new Prozor().setVisible(true);
+        //new Prozor().setVisible(true);
+        new test().setVisible(true);
+                
+        
+        
+        
     }
 }

@@ -1,3 +1,4 @@
+ugovor\view\PregledUgovora.class
 ugovor\model\Entitet.class
 ugovor\controller\Obrada.class
 ugovor\view\PrikazUgovora.class
@@ -7,6 +8,7 @@ ugovor\util\DovlacenjeOIBA.class
 ugovor\view\Prozor.class
 ugovor\Start.class
 ugovor\util\OfirException.class
+ugovor\view\test.class
 ugovor\controller\ObradaUgovor.class
 ugovor\model\Korisnik.class
 ugovor\model\Ugovor.class
