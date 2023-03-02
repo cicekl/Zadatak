@@ -4,13 +4,15 @@
 
 package ugovor;
 
+import javax.swing.JOptionPane;
 import ugovor.controller.ObradaKorisnik;
 import ugovor.model.Korisnik;
 import ugovor.util.OfirException;
 import ugovor.util.ProbniPodatci;
+import ugovor.view.PregledUgovora;
 import ugovor.view.PrikazUgovora;
 import ugovor.view.Prozor;
-import ugovor.view.test;
+import ugovor.view.Test;
 
 
 /**
@@ -24,7 +26,19 @@ public class Start {
         //ProbniPodatci.izvedi();
         
         //new Prozor().setVisible(true);
-        new test().setVisible(true);
+        int i = Integer.parseInt(JOptionPane.showInputDialog("Za unos korisnika unesite 1, za otvaranje dokumenta unesite 2"));
+        
+        switch (i) {
+            case 1:
+                new Prozor().setVisible(true);
+                
+                break;
+            case 2:
+                new Test().setVisible(true);
+                break;
+        }
+        
+        
                 
         
         

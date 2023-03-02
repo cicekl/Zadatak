@@ -8,12 +8,12 @@ package ugovor.view;
  *
  * @author Korisnik
  */
-public class test extends javax.swing.JFrame {
+public class Test extends javax.swing.JFrame {
 
     /**
      * Creates new form test
      */
-    public test() {
+    public Test() {
         initComponents();
     }
 
@@ -27,30 +27,602 @@ public class test extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtPolje = new javax.swing.JTextArea();
+        comboIzaberi = new javax.swing.JComboBox<>();
+        btnDohvati = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("MINISTARSTVO TURIZMA I SPORTA, Prisavlje 14, 10000 Zagreb, OIB: 87892589782, koje zastupa ministrica dr.sc. Nikolina Brnjac (u daljnjem tekstu: Ministarstvo)\n\ni \n\n_____________________ _____________________, __________________________ _____, \n\n\nOIB _________________________(u daljnjem tekstu: Korisnik), zaključili su \n\ndana ___________________ 2022. godine\n\n\nU G O V O R br. _________________\n\no sufinanciranju projekata udruga u turizmu u 2022. \n\n\nČlanak 1.\n\nNa temelju provedenog Javnog natječaja za sufinanciranje projekata udruga u turizmu u 2022. i Odluke o odabiru projekata udruga temeljem Javnog natječaja za sufinanciranje projekata udruga u turizmu u 2022. godini, Ministarstvo će isplatiti Korisniku na teret sredstava osiguranih u Državnom proračunu za 2022. godinu, na razdjelu 090 Ministarstva u glavi 05 pod šifrom P3208 aktivnost 587014, konto 3811 – Tekuće donacije u novcu iznos od \n\n\n__________________________ kuna \n\n\n(slovima: _________________________________________)\n\nza financijsku potporu projekta pod nazivom\n\n„________________________________________________“\n\n\n\ns rokom izvršenja prema prijavi projekta, a najkasnije do ______________________ 2022. godine.\n\nČlanak 2.\n\nSredstva iz članka 1. ovog ugovora mogu se koristiti isključivo za provedbu projekta sukladno uvjetima Javnog natječaja i prema Obrascu proračuna projekta u 2022. godini, koji je sastavni dio ovog ugovora.\nČlanak 3.\n\nDostavljeni Obrazac opisa projekta i Obrazac proračuna projekta s pripadajućom dokumentacijom koju je Korisnik dostavio prijavljujući se na Javni natječaj, sastavni su dio ovog ugovora.\n\nČlanak 4. \n\nMinistarstvo će sredstva iz članka 1. ovog ugovora isplatiti na žiroračun Korisnika IBAN \n\n____________________________, u dva dijela: 50% iznosa sredstava po potpisivanju ugovora, a 50% sredstava po dostavljenom Privremenom izvješću iz članka 5. ovoga ugovora.\n\nČlanak 5. \n\nRadi kontrole namjenskog korištenja sredstava Korisnik se obvezuje da će Ministarstvu \ndostaviti Privremeno izvješće (na propisanom obrascu) o tijeku provedbe projekta do \n\n_____________________ 2022. godine. \n\nKorisnik podnosi završno Izvješće o izvršenju najkasnije do ____________________ 2023. godine. Izvješće se podnosi na propisanim obrascima Ministarstva:\n\nObrazac opisnog izvještaja (na propisanom obrascu, ispunjenom na računalu) u papirnatom obliku i elektroničkom obliku (CD/USB i sl.)  \n\nObrazac financijskog izvještaja (na propisanom obrascu, ispunjenom na računalu) u papirnatom i elektroničkom obliku (CD/USB i sl.) uz detaljno dokumentiranje ukupnih troškova projekta\n\nza bezgotovinska plaćanja - preslike računa (R1 ili R2) koji glase na Korisnika te pripadajući izvod\nza gotovinska plaćanja - preslike računa (R1 ili R2) koji glase na Korisnika, preslike isplatnica iz blagajne i blagajničkog izvješća\nostalu dokumentaciju – preslike putnih naloga s pripadajućim prilozima, preslike dokumenata na temelju kojih su obavljana plaćanja (ugovori, sporazumi, obračuni honorara) i sl. \npriloge vezane uz provedbu projekta (listu sudionika, program provedbe aktivnosti i dr.\n\n\nobrazac s podacima o stavkama nastalih troškova u razdoblju obuhvaćenom izvještajem (za svaku stavku potrebno je navesti naslov, iznos, relevantno proračunsko poglavlje projekta i poziv na dokument  kojim se trošak opravdava te broj izvoda o izvršenim plaćanjima)\n\nobrazac s opisom svih odstupanja u izvorima financiranja u odnosu na prijedlog koji je odobren\n\nČlanak 6.\n\nMinistarstvo pridržava pravo kontinuiranog praćenja i vrednovanja izvršenja projekta Korisnika iz članka 1. ovog ugovora, te preispitivanje financija i troškova u bilo koje vrijeme trajanja sufinanciranja te u razdoblju od 3 godine nakon završetka projekta.\n\nMinistarstvo može neposrednu kontrolu iz prethodnog stavka ovog ugovora obaviti u prostorijama Korisnika, te je o namjeri izvršenja neposredne kontrole dužan prethodno obavijestiti Korisnika barem tri dana prije planiranog izvršenja kontrole.\n\nKorisnik je obavezan o datumu i mjestu održavanja projektnih aktivnosti (seminari, radionice, sajmovi …) obavijestiti Ministarstvo najkasnije 15 dana prije održavanja, kako bi se, po potrebi, mogao obaviti nadzor očevidom.\n\nČlanak 7. \n\nKorisnik ovlašćuje Ministarstvo da radi nadzora namjenskog korištenja sredstava iz članka 1. ovog ugovora neposredno kontaktira sve pravne i fizičke osobe kojima je prema priloženoj dokumentaciji Korisnik isplatio novčana sredstva koja je dobio od Ministarstva u ime financijske potpore.\n\nDavatelj će prikupljene podatke pravnih i fizičkih osoba iz članka 6., stavak 1. koristiti isključivo u svrhu kontinuiranog (financijskog) praćenja i vrednovanja projekta i sukladno Uredbi (EU) 2016/679 Europskog parlamenta i Vijeća o zaštiti pojedinaca u vezi s obradom osobnih podataka i o slobodnom kretanju takvih podataka te Zakonu o provedbi Opće uredbe o zaštiti podataka (NN 42/2018).\n\n\tČlanak 8.\t\n\nKorisnik se obvezuje pravodobno izvijestiti Ministarstvo o eventualnim objektivnim smetnjama tijekom realizacije projekta koje onemogućuju ili bitno mijenjaju opseg, vrstu planiranih aktivnosti i/ili korisnika projekta, izvršenje projekta u ugovorenom roku ili izvršenje projekta u planiranim stavkama proračuna, kako bi se mogle ugovoriti izmjene ugovornih obveza.\n\nManje izmjene ugovora mogu biti:\nizmjene proračuna između proračunskih poglavlja manje od 15%,\nzamjena člana tima,\npromjena bankovnog računa korisnika,\npromjena adrese ili drugih kontakata korisnika,\nmale promjene projekta koje ne utječu na njegov opseg i ciljeve (npr. manje promjene u vremenskom rasporedu provedbe aktivnosti).\n\nManje izmjene ugovora mogu biti jednostrane, te ne zahtijevaju izradu Dodatka ugovoru.\nVeće izmjene ugovora su: \nizmjene proračuna između proračunskih poglavlja veće od 15%,\nproduženje trajanja provedbe projekta (maksimalno do 6 mjeseci),\ndodatak novih aktivnosti u projekt,\npromjena projektnih aktivnosti koja značajno utječe na opseg i ciljeve.\nVeće izmjene ugovora zahtijevaju izradu Dodatka ugovoru i njegovo potpisivanje od strane davatelja i korisnika. Davatelj odlučuje kod svake obavijesti radi li se o manjoj ili većoj izmjeni i sukladno tome odlučuje je li potrebno izraditi Dodatak ugovoru.\n\nČlanak  9.\n\nIzmjene ugovornih obveza Korisnik može zatražiti najkasnije do \n\n____________________2023. godine odnosno 30 dana prije isteka roka izvršenja projekta. Svaka izmjena ugovornih obveza treba biti zatražena i odobrena u pisanom obliku.\n\nKorisnik ne može zatražiti izmjene u provedbi projekta, produljenje roka provedbe ili prenamjenu pojedinih stavki proračuna nakon navedenog roka iz stavka 1. ovog članka.\n\nZahtjev za prenamjenu dijela sredstava i/ili zahtjev za produženje roka provedbe projekta Korisnik dostavlja Ministarstvu u pisanom obliku s obrazloženjem i s prijedlogom novog obrasca proračuna provedbe projekta.\n\nMinistarstvo ima pravo ne odobriti prenamjenu dijela sredstava i/ili produženje roka provedbe projekta ukoliko se time bitno mijenja sadržaj i priroda projekta ili ako zahtjev nema utemeljenje u objektivnim razlozima za prenamjenu i/ili produženje roka provedbe projekta.\n\n\n\n\n\nČlanak 10.\n\nU svrhu osiguranja povrata odobrenih sredstava, Korisnik će prilikom potpisivanja ovoga ugovora priložiti bjanko zadužnicu solemniziranu od javnog bilježnika na prvi veći iznos od ugovorenog iznosa sredstava. \n\nInstrument osiguranja plaćanja iz stavka 1. ovoga članka Ministarstvo zadržava do izvršenja obveza iz ovoga ugovora.\nČlanak 11.\n\nAko Ministarstvo utvrdi da je Korisnik nenamjenski koristio sredstva financijske potpore za izvršenje projekta iz članka 1. ovog ugovora ili nije izvršio projekt u ugovorenom roku, ako nije podnio odgovarajuća izvješća u roku i sa sadržajem određenim u članku 5. ovog ugovora ili ako Ministarstvu ne omogući nadzor nad namjenskim korištenjem sredstava financijske potpore  iz članka 6. i članka 7. ovog ugovora, Korisnik je dužan vratiti primljena nenamjenski utrošena ili neutrošena sredstva uz obračunate kamate u roku od 30 dana od dana primitka zahtjeva Ministarstva za povrat zaprimljenih sredstava.\n\nU slučaju da Korisnik ne postupi u skladu sa zahtjevom iz stavka 1. ovoga članka, Ministarstvo će aktivirati instrument osiguranja plaćanja iz članka 10. ovoga ugovora.\n\nČlanak 12. \n\nMinistarstvo i Korisnik preuzimaju obvezu čuvanja svih dokumenata, podataka ili drugih relevantnih materijala dostavljenih u provedbi projekta najmanje sedam godina od posljednje uplate sredstava.\n\nČlanak 13. \n\nAko Ministarstvo utvrdi da Korisnik nije ispunio ugovorne obveze, uskratit će pravo na financijsku potporu projekata i programa Korisnika u sljedeće dvije godine.\n\nČlanak 14.\n\nKorisnik se obvezuje na svim tiskanim, video i drugim materijalima vezanim uz projekt istaknuti logotip i naziv Ministarstva kao institucije koja sufinancira projekt koji je predmet ovog ugovora te logotip pristupačnog turizma Ministarstva.\n\nKorisnik je suglasan da Ministarstvo koristi i objavljuje dostavljene mu fotografije, video i audio zapise iz stavka 1. ovog članka u cilju promocije financijskih potpora, ilustracije razvoja civilnoga društva u Republici Hrvatskoj i djelovanja Ministarstva.\n\n\nČlanak 15.\n\nMinistarstvo ne snosi odgovornost, neposrednu ili posrednu, za štete proizašle iz bilo koje aktivnosti Korisnika u provedbi ugovorenog projekta.\n\nČlanak 16.\n\nPotpisom ovog ugovora Korisnik se obvezuje da kao korisnik bespovratnih sredstava iz javnih izvora za provođenje projekta od interesa za opće dobro neće sudjelovati u izbornoj ili drugoj promidžbi političke stranke, koalicije ili kandidata, neće davati izravnu potporu političkoj stranci, koaliciji ili kandidatu niti prikupljati financijska sredstva za financiranje političkih stranaka, koalicija ili kandidata za sve vrijeme trajanja ovog ugovora.\n\nČlanak 17.\n\nU slučaju da se spor u provedbi ovog ugovora između Ministarstva i Korisnika ne može riješiti sporazumno, niti mirenjem, spor rješava stvarno nadležan sud u Zagrebu.\n\nČlanak 18.\n\nNa elemente financiranja projekta koji nisu uređeni ovim ugovorom na odgovarajući se način primjenjuju Opći uvjeti propisani člancima 37. do 50. i 52. do 54. Uredbe o kriterijima, mjerilima i postupcima financiranja i ugovaranja programa i projekata od interesa za opće dobro koje provode udruge („Narodne novine“ broj 26/15, 37/21).\n\nČlanak 19.\nObrazac opisa projekta i Obrazac proračuna projekta koje je Korisnik dostavio prijavljujući se na natječaj, sastavni su dio ovog ugovora te čine njegove Priloge 1 i 2.\n\nČlanak 20.\n\nZa svaki oblik komunikacije (dostavu obavijesti o izmjenama i dopunama ugovora, dostavu izvještaja i sl.) koji je povezan s ovim ugovorom potrebno je navesti klasu, urudžbeni broj ugovora i naziv projekta te ga poslati na slijedeću adresu:\n\nza davatelja: Ministarstvo turizma i sporta, Prisavlje 14, Zagreb; e-mail: udruge@mints.hr,\n\n\nza korisnika: ______________________ ______________________, e-mail: \n\n____________________________.\n\n\n\n\n\nČlanak 21.\n\nOvaj ugovor sastavljen je u tri (3) istovjetna primjerka, od kojih jedan (1) primjerak zadržava Korisnik, a dva (2) primjerka Ministarstvo.\n\nČlanak 22.\n\nOvaj ugovor stupa na snagu s danom kad ga potpiše posljednja ugovorna strana. \n\n\n\n\nZA KORISNIKA\t\tZA MINISTARSTVO: \nMinistrica\n\t\t\n\t\tdr.sc. Nikolina Brnjac\n\n\n\n\n\t\n\n\nKLASA:\t\t\nURBROJ:\t\n\n\t\nPrilozi:\n- Obrazac opisa projekta (Prilog 1)\n- Obrazac proračuna projekta (Prilog 2)\n\n\n\n");
-        jScrollPane1.setViewportView(jTextArea1);
+        txtPolje.setColumns(20);
+        txtPolje.setRows(5);
+        jScrollPane1.setViewportView(txtPolje);
+
+        comboIzaberi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "izaberi", "dokument1", "dokument2" }));
+        comboIzaberi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboIzaberiActionPerformed(evt);
+            }
+        });
+
+        btnDohvati.setText("Dohvati");
+        btnDohvati.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDohvatiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(comboIzaberi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDohvati, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(comboIzaberi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnDohvati)
+                .addGap(31, 31, 31))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void comboIzaberiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboIzaberiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboIzaberiActionPerformed
+
+    private void btnDohvatiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDohvatiActionPerformed
+        String itemText = (String)comboIzaberi.getSelectedItem( );
+        if(itemText.equals("dokument1")){
+        txtPolje.setText("MINISTARSTVO TURIZMA I SPORTA, Prisavlje 14, 10000 Zagreb, OIB: 87892589782,  \n" +
+"\n" +
+"koje zastupa ministrica dr.sc. Nikolina Brnjac (u daljnjem tekstu: Ministarstvo)  \n" +
+"\n" +
+"I <ime> <prezime>, <adresa> <kucniBroj>, OIB <oib> (u daljnjem tekstu: Korisnik),  \n" +
+"\n" +
+"zaključili su dana <datumUgovora> 2022. godine \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"U G O V O R br. <brojUgovora> \n" +
+"\n" +
+" \n" +
+"\n" +
+"o sufinanciranju projekata udruga u turizmu u 2022.  \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 1. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Na temelju provedenog Javnog natječaja za sufinanciranje projekata udruga u turizmu  \n" +
+"\n" +
+"u 2022. i Odluke o odabiru projekata udruga temeljem Javnog natječaja za sufinanciranje  \n" +
+"\n" +
+"projekata udruga u turizmu u 2022. godini, Ministarstvo će isplatiti Korisniku na teret  \n" +
+"\n" +
+"sredstava osiguranih u Državnom proračunu za 2022. godinu, na razdjelu 090 Ministarstva \n" +
+"\n" +
+" u glavi 05 pod šifrom P3208 aktivnost 587014, konto 3811 – Tekuće donacije u novcu iznos od  \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"<cijena>  kuna  \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"(slovima: <cijenaSlovima>) \n" +
+"\n" +
+" \n" +
+"\n" +
+"za financijsku potporu projekta pod nazivom \n" +
+"\n" +
+" \n" +
+"\n" +
+"„ <nazivProjekta> “ \n" +
+"\n" +
+" \n" +
+"\n" +
+"s rokom izvršenja prema prijavi projekta, a najkasnije do <datumNajkasnije> 2022. godine. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 2. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Sredstva iz članka 1. ovog ugovora mogu se koristiti isključivo za provedbu projekta sukladno \n" +
+"\n" +
+" uvjetima Javnog natječaja i prema Obrascu proračuna projekta u 2022. godini, koji je sastavni  \n" +
+"\n" +
+"dio ovog ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 3. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Dostavljeni Obrazac opisa projekta i Obrazac proračuna projekta s pripadajućom dokumentacijom \n" +
+"\n" +
+" koju je Korisnik dostavio prijavljujući se na Javni natječaj, sastavni su dio ovog ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 4.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo će sredstva iz članka 1. ovog ugovora isplatiti na žiroračun Korisnika IBAN <iban>, \n" +
+"\n" +
+" u dva dijela: 50% iznosa sredstava po potpisivanju ugovora, a 50% sredstava po dostavljenom  \n" +
+"\n" +
+"Privremenom izvješću iz članka 5. ovoga ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 5.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Radi kontrole namjenskog korištenja sredstava Korisnik se obvezuje da će Ministarstvu  \n" +
+"\n" +
+"dostaviti Privremeno izvješće (na propisanom obrascu) o tijeku provedbe projekta..  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik podnosi završno Izvješće o izvršenju. Izvješće se podnosi na propisanim obrascima  \n" +
+"\n" +
+"Ministarstva: \n" +
+"\n" +
+" \n" +
+"\n" +
+"a)Obrazac opisnog izvještaja (na propisanom obrascu, ispunjenom na računalu) u papirnatom \n" +
+"\n" +
+" obliku i elektroničkom obliku (CD/USB i sl.)   \n" +
+"\n" +
+" \n" +
+"\n" +
+"b)Obrazac financijskog izvještaja (na propisanom obrascu, ispunjenom na računalu) u  \n" +
+"\n" +
+"papirnatom i elektroničkom obliku (CD/USB i sl.) uz detaljno dokumentiranje ukupnih troškova projekta \n" +
+"\n" +
+" \n" +
+"\n" +
+"•za bezgotovinska plaćanja - preslike računa (R1 ili R2) koji glase na Korisnika  \n" +
+"\n" +
+"te pripadajući izvod \n" +
+"\n" +
+"•za gotovinska plaćanja - preslike računa (R1 ili R2) koji glase na Korisnika, preslike  \n" +
+"\n" +
+"isplatnica iz blagajne i blagajničkog izvješća \n" +
+"\n" +
+"•ostalu dokumentaciju – preslike putnih naloga s pripadajućim prilozima, preslike  \n" +
+"\n" +
+"dokumenata na temelju kojih su obavljana plaćanja (ugovori, sporazumi, obračuni honorara) i sl.  \n" +
+"\n" +
+"•priloge vezane uz provedbu projekta (listu sudionika, program provedbe aktivnosti i dr. \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"c)obrazac s podacima o stavkama nastalih troškova u razdoblju obuhvaćenom izvještajem  \n" +
+"\n" +
+"(za svaku stavku potrebno je navesti naslov, iznos, relevantno proračunsko poglavlje projekta  \n" +
+"\n" +
+"i poziv na dokument  kojim se trošak opravdava te broj izvoda o izvršenim plaćanjima) \n" +
+"\n" +
+" \n" +
+"\n" +
+"d)obrazac s opisom svih odstupanja u izvorima financiranja u odnosu na prijedlog koji je odobren \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 6. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo pridržava pravo kontinuiranog praćenja i vrednovanja izvršenja projekta Korisnika  \n" +
+"\n" +
+"iz članka 1. ovog ugovora, te preispitivanje financija i troškova u bilo koje vrijeme trajanja  \n" +
+"\n" +
+"sufinanciranja te u razdoblju od 3 godine nakon završetka projekta. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo može neposrednu kontrolu iz prethodnog stavka ovog ugovora obaviti u prostorijama  \n" +
+"\n" +
+"Korisnika, te je o namjeri izvršenja neposredne kontrole dužan prethodno obavijestiti Korisnika  \n" +
+"\n" +
+"barem tri dana prije planiranog izvršenja kontrole. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik je obavezan o datumu i mjestu održavanja projektnih aktivnosti  \n" +
+"\n" +
+"(seminari, radionice, sajmovi …) obavijestiti Ministarstvo najkasnije 15 dana prije održavanja,  \n" +
+"\n" +
+"kako bi se, po potrebi, mogao obaviti nadzor očevidom. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 7.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik ovlašćuje Ministarstvo da radi nadzora namjenskog korištenja sredstava iz članka 1.  \n" +
+"\n" +
+"ovog ugovora neposredno kontaktira sve pravne i fizičke osobe kojima je prema priloženoj  \n" +
+"\n" +
+"dokumentaciji Korisnik isplatio novčana sredstva koja je dobio od Ministarstva u ime financijske potpore. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Davatelj će prikupljene podatke pravnih i fizičkih osoba iz članka 6., stavak 1. koristiti  \n" +
+"\n" +
+"isključivo u svrhu kontinuiranog (financijskog) praćenja i vrednovanja projekta i sukladno  \n" +
+"\n" +
+"Uredbi (EU) 2016/679 Europskog parlamenta i Vijeća o zaštiti pojedinaca u vezi s obradom osobnih  \n" +
+"\n" +
+"podataka i o slobodnom kretanju takvih podataka te Zakonu o provedbi Opće uredbe o zaštiti podataka  \n" +
+"\n" +
+"(NN 42/2018). \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 8.\n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik se obvezuje pravodobno izvijestiti Ministarstvo o eventualnim objektivnim smetnjama tijekom  \n" +
+"\n" +
+"realizacije projekta koje onemogućuju ili bitno mijenjaju opseg, vrstu planiranih aktivnosti i/ili  \n" +
+"\n" +
+"korisnika projekta, izvršenje projekta u ugovorenom roku ili izvršenje projekta u planiranim stavkama  \n" +
+"\n" +
+"proračuna, kako bi se mogle ugovoriti izmjene ugovornih obveza. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Manje izmjene ugovora mogu biti: \n" +
+"\n" +
+"-izmjene proračuna između proračunskih poglavlja manje od 15%, \n" +
+"\n" +
+"-zamjena člana tima, \n" +
+"\n" +
+"-promjena bankovnog računa korisnika, \n" +
+"\n" +
+"-promjena adrese ili drugih kontakata korisnika, \n" +
+"\n" +
+"-male promjene projekta koje ne utječu na njegov opseg i ciljeve  \n" +
+"\n" +
+"(npr. manje promjene u vremenskom rasporedu provedbe aktivnosti). \n" +
+"\n" +
+" \n" +
+"\n" +
+"Manje izmjene ugovora mogu biti jednostrane, te ne zahtijevaju izradu Dodatka ugovoru. \n" +
+"\n" +
+"Veće izmjene ugovora su:  \n" +
+"\n" +
+"-	izmjene proračuna između proračunskih poglavlja veće od 15%, \n" +
+"\n" +
+"-	produženje trajanja provedbe projekta (maksimalno do 6 mjeseci), \n" +
+"\n" +
+"-	dodatak novih aktivnosti u projekt, \n" +
+"\n" +
+"-	promjena projektnih aktivnosti koja značajno utječe na opseg i ciljeve. \n" +
+"\n" +
+"Veće izmjene ugovora zahtijevaju izradu Dodatka ugovoru i njegovo potpisivanje od strane davatelja \n" +
+"\n" +
+" i korisnika. Davatelj odlučuje kod svake obavijesti radi li se o manjoj ili većoj izmjeni i  \n" +
+"\n" +
+"sukladno tome odlučuje je li potrebno izraditi Dodatak ugovoru. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak  9. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Izmjene ugovornih obveza Korisnik može zatražiti najkasnije do  \n" +
+"\n" +
+"<datumIzmjene> 2023. godine odnosno 30 dana prije isteka roka izvršenja projekta. Svaka izmjena  \n" +
+"\n" +
+"ugovornih obveza treba biti zatražena i odobrena u pisanom obliku. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik ne može zatražiti izmjene u provedbi projekta, produljenje roka provedbe ili prenamjenu  \n" +
+"\n" +
+"pojedinih stavki proračuna nakon navedenog roka iz stavka 1. ovog članka. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Zahtjev za prenamjenu dijela sredstava i/ili zahtjev za produženje roka provedbe projekta Korisnik \n" +
+"\n" +
+" dostavlja Ministarstvu u pisanom obliku s obrazloženjem i s prijedlogom novog obrasca proračuna  \n" +
+"\n" +
+"provedbe projekta. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo ima pravo ne odobriti prenamjenu dijela sredstava i/ili produženje roka provedbe  \n" +
+"\n" +
+"projekta ukoliko se time bitno mijenja sadržaj i priroda projekta ili ako zahtjev nema utemeljenje  \n" +
+"\n" +
+"u objektivnim razlozima za prenamjenu i/ili produženje roka provedbe projekta. \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 10. \n" +
+"\n" +
+" \n" +
+"\n" +
+"U svrhu osiguranja povrata odobrenih sredstava, Korisnik će prilikom potpisivanja ovoga ugovora  \n" +
+"\n" +
+"priložiti bjanko zadužnicu solemniziranu od javnog bilježnika na prvi veći iznos od ugovorenog  \n" +
+"\n" +
+"iznosa sredstava.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Instrument osiguranja plaćanja iz stavka 1. ovoga članka Ministarstvo zadržava do izvršenja  \n" +
+"\n" +
+"obveza iz ovoga ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 11. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ako Ministarstvo utvrdi da je Korisnik nenamjenski koristio sredstva financijske potpore za  \n" +
+"\n" +
+"izvršenje projekta iz članka 1. ovog ugovora ili nije izvršio projekt u ugovorenom roku,  \n" +
+"\n" +
+"ako nije podnio odgovarajuća izvješća u roku i sa sadržajem određenim u članku 5. ovog  \n" +
+"\n" +
+"ugovora ili ako Ministarstvu ne omogući nadzor nad namjenskim korištenjem sredstava financijske \n" +
+"\n" +
+" potpore  iz članka 6. i članka 7. ovog ugovora, Korisnik je dužan vratiti primljena nenamjenski  \n" +
+"\n" +
+"utrošena ili neutrošena sredstva uz obračunate kamate u roku od 30 dana od dana primitka zahtjeva  \n" +
+"\n" +
+"Ministarstva za povrat zaprimljenih sredstava. \n" +
+"\n" +
+" \n" +
+"\n" +
+"U slučaju da Korisnik ne postupi u skladu sa zahtjevom iz stavka 1. ovoga članka, Ministarstvo \n" +
+"\n" +
+" će aktivirati instrument osiguranja plaćanja iz članka 10. ovoga ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 12.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo i Korisnik preuzimaju obvezu čuvanja svih dokumenata, podataka ili drugih  \n" +
+"\n" +
+"relevantnih materijala dostavljenih u provedbi projekta najmanje sedam godina od posljednje uplate sredstava. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 13.  \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ako Ministarstvo utvrdi da Korisnik nije ispunio ugovorne obveze, uskratit će pravo na financijsku \n" +
+"\n" +
+" potporu projekata i programa Korisnika u sljedeće dvije godine. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 14. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik se obvezuje na svim tiskanim, video i drugim materijalima vezanim uz projekt istaknuti \n" +
+"\n" +
+" logotip i naziv Ministarstva kao institucije koja sufinancira projekt koji je predmet ovog ugovora \n" +
+"\n" +
+" te logotip pristupačnog turizma Ministarstva. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Korisnik je suglasan da Ministarstvo koristi i objavljuje dostavljene mu fotografije, video i audio  \n" +
+"\n" +
+"zapise iz stavka 1. ovog članka u cilju promocije financijskih potpora, ilustracije razvoja civilnoga \n" +
+"\n" +
+" društva u Republici Hrvatskoj i djelovanja Ministarstva. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 15. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ministarstvo ne snosi odgovornost, neposrednu ili posrednu, za štete proizašle iz bilo koje aktivnosti  \n" +
+"\n" +
+"Korisnika u provedbi ugovorenog projekta. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 16. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Potpisom ovog ugovora Korisnik se obvezuje da kao korisnik bespovratnih sredstava iz javnih izvora za \n" +
+"\n" +
+" provođenje projekta od interesa za opće dobro neće sudjelovati u izbornoj ili drugoj promidžbi  \n" +
+"\n" +
+"političke stranke, koalicije ili kandidata, neće davati izravnu potporu političkoj stranci, koaliciji \n" +
+"\n" +
+" ili kandidatu niti prikupljati financijska sredstva za financiranje političkih stranaka, koalicija  \n" +
+"\n" +
+"ili kandidata za sve vrijeme trajanja ovog ugovora. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 17. \n" +
+"\n" +
+" \n" +
+"\n" +
+"U slučaju da se spor u provedbi ovog ugovora između Ministarstva i Korisnika ne može riješiti  \n" +
+"\n" +
+"sporazumno, niti mirenjem, spor rješava stvarno nadležan sud u Zagrebu. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 18. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Na elemente financiranja projekta koji nisu uređeni ovim ugovorom na odgovarajući se način  \n" +
+"\n" +
+"primjenjuju Opći uvjeti propisani člancima 37. do 50. i 52. do 54. Uredbe o kriterijima, mjerilima \n" +
+"\n" +
+" i postupcima financiranja i ugovaranja programa i projekata od interesa za opće dobro koje provode  \n" +
+"\n" +
+"udruge („Narodne novine“ broj 26/15, 37/21). \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 19. \n" +
+"\n" +
+"Obrazac opisa projekta i Obrazac proračuna projekta koje je Korisnik dostavio prijavljujući se na  \n" +
+"\n" +
+"natječaj, sastavni su dio ovog ugovora te čine njegove Priloge 1 i 2. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 20. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Za svaki oblik komunikacije (dostavu obavijesti o izmjenama i dopunama ugovora, dostavu izvještaja \n" +
+"\n" +
+" i sl.) koji je povezan s ovim ugovorom potrebno je navesti klasu, urudžbeni broj ugovora i naziv  \n" +
+"\n" +
+"projekta te ga poslati na slijedeću adresu: \n" +
+"\n" +
+"za davatelja: Ministarstvo turizma i sporta, Prisavlje 14, Zagreb; e-mail: udruge@mints.hr, \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"za korisnika: <ime> <prezime> , e-mail: <email>. \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 21. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ovaj ugovor sastavljen je u tri (3) istovjetna primjerka, od kojih jedan (1) primjerak zadržava \n" +
+"\n" +
+" Korisnik, a dva (2) primjerka Ministarstvo. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Članak 22. \n" +
+"\n" +
+" \n" +
+"\n" +
+"Ovaj ugovor stupa na snagu s danom kad ga potpiše posljednja ugovorna strana.  \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"ZA KORISNIKA 				ZA MINISTARSTVO \n" +
+"\n" +
+"Ministrica \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"__________________________	__________________________ \n" +
+"\n" +
+"dr.sc. Nikolina Brnjac \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"KLASA:		 \n" +
+"\n" +
+"URBROJ:	 \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+"Prilozi: \n" +
+"\n" +
+"- Obrazac opisa projekta (Prilog 1) \n" +
+"\n" +
+"- Obrazac proračuna projekta (Prilog 2) \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" \n" +
+"\n" +
+" ");
+        }
+    }//GEN-LAST:event_btnDohvatiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -58,7 +630,9 @@ public class test extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDohvati;
+    private javax.swing.JComboBox<String> comboIzaberi;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea txtPolje;
     // End of variables declaration//GEN-END:variables
 }
