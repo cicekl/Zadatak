@@ -53,14 +53,12 @@ public class ObradaUgovor extends Obrada<Ugovor> {
      List<Ugovor> ugovori = null;
      try {
          ugovori = session.createQuery("from Ugovor" + " where u.brojUgovora:=brojUgovora",Ugovor.class).setParameter("brojUgovora",entitet.getBrojUgovora()).list();
-         if(ugovori!=null && !ugovori.isEmpty()) {
-         throw new OfirException("Već postoji ugovor s istim brojem ugovora u bazi!");
-     }
-     }catch (OfirException e) {
-         
-     }
         
-    }
+     }catch (Exception e) {
+     }
+     if(ugovori!=null && !ugovori.isEmpty()) {
+         throw new OfirException("Već postoji ugovor s istim brojem ugovora u bazi!");
+    } }
 
     private void kontrolaCijene() throws OfirException {
         kontrolaPostojanjaCijene();
@@ -68,7 +66,6 @@ public class ObradaUgovor extends Obrada<Ugovor> {
 
     private void kontrolaPostojanjaCijene() throws OfirException {
         if(entitet.getCijena()==null || entitet.getCijena().compareTo(BigDecimal.ZERO)<=0 || entitet.getCijena().compareTo(new BigDecimal(1000000))==1) {
-            
             throw new OfirException("Cijena mora biti upisana i mora biti veća od 0 ili manja od 100 000!");
             
         }
@@ -107,6 +104,6 @@ public class ObradaUgovor extends Obrada<Ugovor> {
         
     }
     
-    
+
     
 
