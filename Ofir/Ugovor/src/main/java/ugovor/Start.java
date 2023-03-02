@@ -8,6 +8,8 @@ import ugovor.controller.ObradaKorisnik;
 import ugovor.model.Korisnik;
 import ugovor.util.OfirException;
 import ugovor.util.ProbniPodatci;
+import ugovor.view.PrikazUgovora;
+import ugovor.view.Prozor;
 
 /**
  *
@@ -19,20 +21,6 @@ public class Start {
        
         //ProbniPodatci.izvedi();
         
-        ObradaKorisnik ok = new ObradaKorisnik();
-        
-        
-        Korisnik k = new Korisnik();
-        k.setIBAN("HR13134358732989432");
-        k.setPrezime("Markovic");
-        k.setUlica("New Street");
-        k.setKucniBroj("27"); 
-        ok.setEntitet(k);
-        try {
-            ok.create();
-        } catch (OfirException e) {
-            System.out.println(e.getPoruka()
-            ); 
-        }
+        new Prozor().setVisible(true);
     }
 }

@@ -24,13 +24,13 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
     protected void kontrolaUnos() throws OfirException {
         kontrolaIme();
         kontrolaPrezime();
-        kontrolaImePrezimeNull();
+        kontrolaImeNull();
 
     }
 
     @Override
     protected void kontrolaPromjena() throws OfirException {
-        kontrolaImePrezimeNull();
+        kontrolaImeNull();
     }
 
     @Override
@@ -78,7 +78,7 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
 
     }
 
-    private void kontrolaImePrezimeNull() throws OfirException {
+    private void kontrolaImeNull() throws OfirException {
         if (entitet.getIme() == null) {
             throw new OfirException("Ime i prezime ne smije biti prazno");
         }
