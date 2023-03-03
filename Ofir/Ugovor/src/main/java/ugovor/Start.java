@@ -37,7 +37,7 @@ public class Start {
        
         //ProbniPodatci.izvedi();
         
-        // new Prozor().setVisible(true);
+          new Prozor().setVisible(true);
 //        int i = Integer.parseInt(JOptionPane.showInputDialog("Za korisnika unesite 1,ugovor 2, dokument 3"));
 //        
 //        switch (i) {
@@ -61,7 +61,7 @@ public class Start {
 //             
 //        }
 
-    new Pretraga().setVisible(true);
+    // new Pretraga().setVisible(true);
         
        // System.out.println(UnosDatuma("2","3","2002")); 
         // ArrayList<Korisnik> korisnici = new ArrayList<>();

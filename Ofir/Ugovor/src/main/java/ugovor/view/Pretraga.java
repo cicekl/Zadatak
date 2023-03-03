@@ -4,9 +4,16 @@
  */
 package ugovor.view;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import ugovor.model.Korisnik;
 import static ugovor.util.SearchDatabase.searchDatabase;
 
@@ -36,6 +43,7 @@ public class Pretraga extends javax.swing.JFrame {
         btnPretraga = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         lstLista = new javax.swing.JList<>();
+        btnPohrani = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,6 +55,13 @@ public class Pretraga extends javax.swing.JFrame {
         });
 
         jScrollPane1.setViewportView(lstLista);
+
+        btnPohrani.setText("Pohrani u ugovor");
+        btnPohrani.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPohraniActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -60,17 +75,24 @@ public class Pretraga extends javax.swing.JFrame {
                         .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(73, 73, 73)
                         .addComponent(btnPretraga)))
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addGap(68, 68, 68)
+                .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPretraga))
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnPretraga))
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(61, Short.MAX_VALUE))
         );
 
@@ -95,12 +117,31 @@ public class Pretraga extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnPretragaActionPerformed
 
+    private void btnPohraniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPohraniActionPerformed
+
+//            lstLista.addMouseListener(new MouseAdapter() {
+//         public void mouseClicked(MouseEvent me) {
+//            if (me.getClickCount() == 1) {
+//               JList target = (JList)me.getSource();
+//               int index = target.locationToIndex(me.getPoint());
+//               if (index >= 0) {
+//                  Object item = target.getModel().getElementAt(index);
+//                   JOptionPane.showMessageDialog(null, item.toString());
+//               }
+//            }
+//         }
+//      });
+
+
+    }//GEN-LAST:event_btnPohraniActionPerformed
+
     /**
      * @param args the command line arguments
      */
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnPohrani;
     private javax.swing.JButton btnPretraga;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lstLista;

@@ -27,6 +27,7 @@ public class ObradaUgovor extends Obrada<Ugovor> {
         kontrolaCijeneSlovima();
         kontrolaNazivaProjekta();
         kontrolaDatuma();
+  
     }
 
     @Override
@@ -79,7 +80,7 @@ public class ObradaUgovor extends Obrada<Ugovor> {
     }
 
     private void kontrolaPostojanjaNaziva() throws OfirException {
-        if(entitet.getNazivProjekta()==null) {
+        if(entitet.getNazivProjekta().isEmpty()) {
             throw new OfirException("Naziv projekta mora biti postavljen!");
         }
     

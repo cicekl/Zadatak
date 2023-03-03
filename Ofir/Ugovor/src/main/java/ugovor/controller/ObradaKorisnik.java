@@ -26,6 +26,7 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
         kontrolaPrezime();
         kontrolaImeNull();
         konrolaOib();
+        kontrolaPrazno();
 
     }
 
@@ -82,6 +83,16 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
     private void kontrolaImeNull() throws OfirException {
         if (entitet.getIme() == null) {
             throw new OfirException("Ime i prezime ne smije biti prazno");
+        }
+        
+    }
+
+    private void kontrolaPrazno() throws OfirException {
+
+        if((entitet.getIme().isEmpty()) || (entitet.getPrezime().isEmpty()) || (entitet.getEmail().isEmpty()) || (entitet.getOIB().isEmpty()) || (entitet.getIBAN().isEmpty()) || (entitet.getUlica().isEmpty())) {
+            
+            throw new OfirException("Sva polja moraju biti popunjena!");
+            
         }
         
     }
