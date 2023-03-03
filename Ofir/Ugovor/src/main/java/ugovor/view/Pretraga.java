@@ -4,6 +4,12 @@
  */
 package ugovor.view;
 
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+import ugovor.model.Korisnik;
+import static ugovor.util.SearchDatabase.searchDatabase;
+
 /**
  *
  * @author Lorena
@@ -40,11 +46,6 @@ public class Pretraga extends javax.swing.JFrame {
             }
         });
 
-        lstLista.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(lstLista);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -54,11 +55,12 @@ public class Pretraga extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1)
-                    .addComponent(txtUnos, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE))
-                .addGap(102, 102, 102)
-                .addComponent(btnPretraga)
-                .addContainerGap(128, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(73, 73, 73)
+                        .addComponent(btnPretraga)))
+                .addContainerGap(246, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -67,16 +69,28 @@ public class Pretraga extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPretraga))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(35, 35, 35)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPretragaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPretragaActionPerformed
+        lstLista.clearSelection();
+        DefaultListModel<String> model = new DefaultListModel<>();
+        JList<String> list = new JList<>( model );
         String s = txtUnos.getText();
+        ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
+        for(Korisnik k:marija){
+        model.addElement(k.getIme()+ " " + k.getPrezime() + "        " + k.getOIB());
+        lstLista.setModel(model);
+        // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
+        }
+
+        
+        
         
         
     }//GEN-LAST:event_btnPretragaActionPerformed

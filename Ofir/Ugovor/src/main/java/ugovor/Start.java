@@ -23,6 +23,7 @@ import ugovor.view.ProzorU;
 import ugovor.view.test;
 import org.hibernate.Session;
 import ugovor.util.HibernateUtil;
+import ugovor.view.Pretraga;
 
 
 
@@ -59,6 +60,8 @@ public class Start {
 //           
 //             
 //        }
+
+    new Pretraga().setVisible(true);
         
        // System.out.println(UnosDatuma("2","3","2002")); 
         // ArrayList<Korisnik> korisnici = new ArrayList<>();
@@ -69,7 +72,7 @@ public class Start {
 //        }
 
     for(Korisnik k:marija){
-        System.out.println(k.getIme() + " " + k.getPrezime()); 
+       // System.out.println(k.getIme() + " " + k.getPrezime()); 
         
     }
         
