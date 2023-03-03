@@ -4,14 +4,17 @@
 
 package ugovor;
 
+import java.math.BigDecimal;
+import java.text.ParseException;
 import javax.swing.JOptionPane;
 import ugovor.controller.ObradaKorisnik;
 import ugovor.model.Korisnik;
 import ugovor.util.OfirException;
 import ugovor.util.ProbniPodatci;
-import ugovor.view.PregledUgovora;
-import ugovor.view.PrikazUgovora;
+import ugovor.util.UnosDatuma;
+import static ugovor.util.UnosDatuma.UnosDatuma;
 import ugovor.view.Prozor;
+import ugovor.view.ProzorU;
 import ugovor.view.test;
 
 
@@ -21,12 +24,12 @@ import ugovor.view.test;
  */
 public class Start {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
        
         //ProbniPodatci.izvedi();
         
-        //new Prozor().setVisible(true);
-        int i = Integer.parseInt(JOptionPane.showInputDialog("Za unos korisnika unesite 1, za otvaranje dokumenta unesite 2"));
+        // new Prozor().setVisible(true);
+        int i = Integer.parseInt(JOptionPane.showInputDialog("Za korisnika unesite 1,ugovor 2, dokument 3"));
         
         switch (i) {
             case 1:
@@ -34,14 +37,23 @@ public class Start {
                 
                 break;
             case 2:
-                new test().setVisible(true);
+               new ProzorU().setVisible(true);
+                break;
+            case 3:
+                 new test().setVisible(true);
                 break;
                 
+            default :
+                JOptionPane.showMessageDialog(null, "Izlaz iz programa");
+               
+                break;
+
+           
+             
         }
         
-        
+      //  System.out.println(UnosDatuma("2","3","2002"));
                 
-        
         
         
     }

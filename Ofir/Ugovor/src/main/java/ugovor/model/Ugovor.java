@@ -63,6 +63,7 @@ public class Ugovor extends Entitet{
         this.datum = datum;
     }
 
+
     public Ugovor() {
     }
 

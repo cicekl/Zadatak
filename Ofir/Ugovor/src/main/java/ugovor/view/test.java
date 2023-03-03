@@ -30,6 +30,8 @@ public class test extends javax.swing.JFrame {
         txtPolje = new javax.swing.JTextArea();
         comboIzaberi = new javax.swing.JComboBox<>();
         btnDohvati = new javax.swing.JButton();
+        btnPretraga = new javax.swing.JButton();
+        txtPretraga = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,6 +53,13 @@ public class test extends javax.swing.JFrame {
             }
         });
 
+        btnPretraga.setText("Pretraži");
+        btnPretraga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPretragaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -59,8 +68,11 @@ public class test extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(comboIzaberi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDohvati, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(comboIzaberi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnDohvati, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(btnPretraga, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtPretraga, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -70,6 +82,10 @@ public class test extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(comboIzaberi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txtPretraga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnPretraga)
+                .addGap(18, 18, 18)
                 .addComponent(btnDohvati)
                 .addGap(31, 31, 31))
         );
@@ -704,6 +720,10 @@ if(itemText.equals("dokument2")){
 }       
     }//GEN-LAST:event_btnDohvatiActionPerformed
 
+    private void btnPretragaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPretragaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPretragaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -711,8 +731,10 @@ if(itemText.equals("dokument2")){
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDohvati;
+    private javax.swing.JButton btnPretraga;
     private javax.swing.JComboBox<String> comboIzaberi;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtPolje;
+    private javax.swing.JTextField txtPretraga;
     // End of variables declaration//GEN-END:variables
 }

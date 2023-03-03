@@ -27,8 +27,12 @@
               <Component id="jScrollPane1" pref="763" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="comboIzaberi" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnDohvati" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="comboIzaberi" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnDohvati" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="btnPretraga" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPretraga" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -41,6 +45,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="comboIzaberi" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
+              <Component id="txtPretraga" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btnPretraga" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnDohvati" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
           </Group>
@@ -87,6 +95,16 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDohvatiActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnPretraga">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pretra&#x17e;i"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPretragaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPretraga">
     </Component>
   </SubComponents>
 </Form>

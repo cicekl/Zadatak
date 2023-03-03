@@ -25,6 +25,7 @@ public class ObradaKorisnik extends Obrada<Korisnik> {
         kontrolaIme();
         kontrolaPrezime();
         kontrolaImeNull();
+        konrolaOib();
 
     }
 

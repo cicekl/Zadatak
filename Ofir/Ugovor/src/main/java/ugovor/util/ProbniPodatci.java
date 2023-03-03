@@ -66,7 +66,7 @@ public class ProbniPodatci {
         u.setCijena(new BigDecimal(faker.number().randomNumber()));
         u.setCijenaSlovima(faker.animal().name());
         u.setNazivProjekta(faker.name().name());
-        u.setDatum(faker.date().birthday());
+        //u.setDatum(faker.date().birthday());
         session.persist(u);
         ugovor.add(u);
     }
