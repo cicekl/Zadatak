@@ -92,6 +92,11 @@ public class Korisnik extends Entitet {
     public void setIBAN(String IBAN) {
         this.IBAN = IBAN;
     }
+
+    @Override
+    public String toString() {
+        return ime+ " " +prezime;
+    }
     
     
     
