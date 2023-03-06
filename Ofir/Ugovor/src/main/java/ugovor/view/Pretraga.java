@@ -121,7 +121,7 @@ public class Pretraga extends javax.swing.JFrame {
         String upit = "ime";
         ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s,upit));
         for(Korisnik k:marija){
-        model.addElement(k.getOIB());
+        model.addElement(k.getIme() + " " + k.getPrezime() + " " + k.getOIB());
         lstLista.setModel(model);
         // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
         }
@@ -131,10 +131,13 @@ public class Pretraga extends javax.swing.JFrame {
 
     private void btnPohraniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPohraniActionPerformed
             
-       // txtPoruka.setText(lstLista.getSelectedValue());
+        
       //  DefaultListModel<String> model = new DefaultListModel<>();
        // JList<String> list = new JList<>( model );
+       //  String selectedItem = lstLista.getSelectedValue();
          String selectedItem = lstLista.getSelectedValue();
+         String [] words = selectedItem.split("\\s");
+         selectedItem = words[2];
     
     // Query the database for the name corresponding to the selected item
         String upit = "OIB";
@@ -149,11 +152,13 @@ public class Pretraga extends javax.swing.JFrame {
         document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
         document.replace("<oib>", k.getOIB(), false, true);
         
-     
+    
 
         //Save the result document
         document.saveToFile("C:\\Users\\Lorena\\Documents\\"+k.getIme()+k.getPrezime()+".docx",FileFormat.Docx); 
        // txtPoruka.setText(k.getKucniBroj()); }
+       
+       JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
        
        }
        
