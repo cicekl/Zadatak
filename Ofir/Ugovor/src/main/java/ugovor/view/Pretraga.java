@@ -44,8 +44,10 @@ public class Pretraga extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         lstLista = new javax.swing.JList<>();
         btnPohrani = new javax.swing.JButton();
+        txtPoruka = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         btnPretraga.setText("Pretraži");
         btnPretraga.addActionListener(new java.awt.event.ActionListener() {
@@ -76,8 +78,10 @@ public class Pretraga extends javax.swing.JFrame {
                         .addGap(73, 73, 73)
                         .addComponent(btnPretraga)))
                 .addGap(68, 68, 68)
-                .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtPoruka, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,13 +94,15 @@ public class Pretraga extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnPretraga))
+                            .addComponent(btnPretraga)
+                            .addComponent(txtPoruka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(35, 35, 35)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(249, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPretragaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPretragaActionPerformed
@@ -111,14 +117,19 @@ public class Pretraga extends javax.swing.JFrame {
         // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
         }
 
-        
-        
-        
-        
+
     }//GEN-LAST:event_btnPretragaActionPerformed
 
     private void btnPohraniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPohraniActionPerformed
-
+            
+        txtPoruka.setText(lstLista.getSelectedValue());DefaultListModel<String> model = new DefaultListModel<>();
+        JList<String> list = new JList<>( model );
+        String s = txtPoruka.getText();
+        ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
+        for(Korisnik k:marija){
+        model.addElement(k.getIme()+ " " + k.getPrezime() + "        " + k.getKucniBroj());
+        lstLista.setModel(model);
+        
 //            lstLista.addMouseListener(new MouseAdapter() {
 //         public void mouseClicked(MouseEvent me) {
 //            if (me.getClickCount() == 1) {
@@ -132,19 +143,18 @@ public class Pretraga extends javax.swing.JFrame {
 //         }
 //      });
 
-
     }//GEN-LAST:event_btnPohraniActionPerformed
 
     /**
      * @param args the command line arguments
      */
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnPohrani;
     private javax.swing.JButton btnPretraga;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lstLista;
+    private javax.swing.JTextField txtPoruka;
     private javax.swing.JTextField txtUnos;
     // End of variables declaration//GEN-END:variables
 }
