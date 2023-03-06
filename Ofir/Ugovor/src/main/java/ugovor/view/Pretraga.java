@@ -143,7 +143,7 @@ public class Pretraga extends javax.swing.JFrame {
         String upit = "OIB";
         ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem,upit));
        for(Korisnik k:odabrano){
-        Document document = new Document("C:\\Users\\Lorena\\Documents\\potpora.test.docx");
+        Document document = new Document("C:\\Users\\Kristijan\\Desktop\\Ugovor\\ugovor.docx");
 
         // Replace a specific text
         document.replace("<ime>", k.getIme(), false, true);
@@ -155,7 +155,7 @@ public class Pretraga extends javax.swing.JFrame {
     
 
         //Save the result document
-        document.saveToFile("C:\\Users\\Lorena\\Documents\\"+k.getIme()+k.getPrezime()+".docx",FileFormat.Docx); 
+        document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\"+k.getIme()+k.getPrezime()+".docx",FileFormat.Docx); 
        // txtPoruka.setText(k.getKucniBroj()); }
        
        JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");

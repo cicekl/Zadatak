@@ -89,6 +89,8 @@ public class Start {
         document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\saOtisom.docx", FileFormat.Docx); */
         
         new Pretraga().setVisible(true); 
+        
+        
     }
        
     }
