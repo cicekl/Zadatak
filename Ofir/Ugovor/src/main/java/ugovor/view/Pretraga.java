@@ -30,6 +30,7 @@ public class Pretraga extends javax.swing.JFrame {
      */
     public Pretraga() {
         initComponents();
+        setTitle("Pretraga korisnika");
     }
 
     /**
