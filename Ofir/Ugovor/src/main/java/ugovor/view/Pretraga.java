@@ -4,6 +4,8 @@
  */
 package ugovor.view;
 
+import com.spire.doc.Document;
+import com.spire.doc.FileFormat;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
@@ -65,6 +67,12 @@ public class Pretraga extends javax.swing.JFrame {
             }
         });
 
+        txtPoruka.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPorukaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,9 +118,10 @@ public class Pretraga extends javax.swing.JFrame {
         DefaultListModel<String> model = new DefaultListModel<>();
         JList<String> list = new JList<>( model );
         String s = txtUnos.getText();
-        ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
+        String upit = "ime";
+        ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s,upit));
         for(Korisnik k:marija){
-        model.addElement(k.getIme()+ " " + k.getPrezime() + "        " + k.getOIB());
+        model.addElement(k.getOIB());
         lstLista.setModel(model);
         // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
         }
@@ -122,14 +131,32 @@ public class Pretraga extends javax.swing.JFrame {
 
     private void btnPohraniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPohraniActionPerformed
             
-        txtPoruka.setText(lstLista.getSelectedValue());DefaultListModel<String> model = new DefaultListModel<>();
-        JList<String> list = new JList<>( model );
-        String s = txtPoruka.getText();
-        ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
-        for(Korisnik k:marija){
-        model.addElement(k.getIme()+ " " + k.getPrezime() + "        " + k.getKucniBroj());
-        lstLista.setModel(model);
+       // txtPoruka.setText(lstLista.getSelectedValue());
+      //  DefaultListModel<String> model = new DefaultListModel<>();
+       // JList<String> list = new JList<>( model );
+         String selectedItem = lstLista.getSelectedValue();
+    
+    // Query the database for the name corresponding to the selected item
+        String upit = "OIB";
+        ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem,upit));
+       for(Korisnik k:odabrano){
+        Document document = new Document("C:\\Users\\Lorena\\Documents\\potpora.test.docx");
+
+        // Replace a specific text
+        document.replace("<ime>", k.getIme(), false, true);
+        document.replace("<prezime>", k.getPrezime(), false, true);
+        document.replace("<adresa>", k.getUlica(), false, true);
+        document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
+        document.replace("<oib>", k.getOIB(), false, true);
         
+     
+
+        //Save the result document
+        document.saveToFile("C:\\Users\\Lorena\\Documents\\"+k.getIme()+k.getPrezime()+".docx",FileFormat.Docx); 
+       // txtPoruka.setText(k.getKucniBroj()); }
+       
+       }
+       
 //            lstLista.addMouseListener(new MouseAdapter() {
 //         public void mouseClicked(MouseEvent me) {
 //            if (me.getClickCount() == 1) {
@@ -144,6 +171,10 @@ public class Pretraga extends javax.swing.JFrame {
 //      });
 
     }//GEN-LAST:event_btnPohraniActionPerformed
+
+    private void txtPorukaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPorukaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPorukaActionPerformed
 
     /**
      * @param args the command line arguments

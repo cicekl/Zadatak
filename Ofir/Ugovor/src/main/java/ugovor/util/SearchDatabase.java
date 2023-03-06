@@ -19,12 +19,12 @@ import ugovor.model.Korisnik;
  */
 public class SearchDatabase {
     
-    public static List<Korisnik> searchDatabase(String query) {
+    public static List<Korisnik> searchDatabase(String query, String upit) {
     List<Korisnik> results = new ArrayList<Korisnik>();
     try {
         Connection conn = (Connection) DriverManager.getConnection("jdbc:mariadb://localhost/ugovor", "root", "");
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Korisnik WHERE ime LIKE '%" + query + "%'");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Korisnik WHERE " + upit + " LIKE '%" + query + "%'");
         while (rs.next()) {
             Korisnik korisnik = new Korisnik(rs.getString("ime"), rs.getString("prezime"), rs.getString("OIB"), rs.getString("ulica"), rs.getString("kucniBroj"),rs.getInt("ID"),rs.getString("email"),rs.getString("IBAN"));
             results.add(korisnik);

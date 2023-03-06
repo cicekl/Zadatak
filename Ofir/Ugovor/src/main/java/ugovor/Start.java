@@ -74,7 +74,7 @@ public class Start {
         //  for(Korisnik k:marija){
         // System.out.println(k.getIme() + " " + k.getPrezime()); 
        
-         Document document = new Document("C:\\Users\\Kristijan\\Desktop\\Ugovor\\ugovor.docx");
+        /* Document document = new Document("C:\\Users\\Kristijan\\Desktop\\Ugovor\\ugovor.docx");
 
         // Replace a specific text
         document.replace("<ime>", "Otis", false, true);
@@ -86,9 +86,9 @@ public class Start {
         
 
         //Save the result document
-        document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\saOtisom.docx", FileFormat.Docx);
+        document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\saOtisom.docx", FileFormat.Docx); */
         
-        new Pretraga().setVisible(true);
+        new Pretraga().setVisible(true); 
     }
        
     }
