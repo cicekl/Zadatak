@@ -1,13 +1,14 @@
 ugovor\view\test$2.class
 ugovor\model\Entitet.class
 ugovor\controller\Obrada.class
-ugovor\view\Pretraga$3.class
+ugovor\view\Izbornik$2.class
 ugovor\util\SearchDatabase.class
 ugovor\view\Prozor.class
 ugovor\view\Pretraga$2.class
 ugovor\Start.class
 ugovor\util\OfirException.class
 ugovor\view\test.class
+ugovor\view\Izbornik.class
 ugovor\view\ProzorU$1.class
 ugovor\view\ProzorU.class
 ugovor\view\test$1.class
@@ -17,6 +18,7 @@ ugovor\util\ProbniPodatci.class
 ugovor\view\test$3.class
 ugovor\view\Prozor$1.class
 ugovor\util\DovlacenjeOIBA.class
+ugovor\view\Izbornik$1.class
 ugovor\view\Pretraga.class
 ugovor\controller\ObradaUgovor.class
 ugovor\model\Korisnik.class

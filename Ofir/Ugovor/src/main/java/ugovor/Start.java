@@ -29,6 +29,7 @@ import ugovor.view.Pretraga;
 
 import com.spire.doc.Document;
 import com.spire.doc.FileFormat;
+import ugovor.view.Izbornik;
 
 
 
@@ -88,7 +89,7 @@ public class Start {
         //Save the result document
         document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\saOtisom.docx", FileFormat.Docx); */
         
-        new Pretraga().setVisible(true); 
+        new Izbornik().setVisible(true); 
         
         
     }
