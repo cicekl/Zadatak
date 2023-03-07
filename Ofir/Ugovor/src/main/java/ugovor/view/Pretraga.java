@@ -122,6 +122,9 @@ public class Pretraga extends javax.swing.JFrame {
         String s = txtUnos.getText();
         // String upit = "ime";
         ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
+        if(marija.size()==0){
+            JOptionPane.showMessageDialog(null, "Nema trazenog korisnika");
+        }
         for (Korisnik k : marija) {
             model.addElement(k.getIme() + " " + k.getPrezime() + " " + k.getOIB());
             lstLista.setModel(model);
@@ -143,8 +146,9 @@ public class Pretraga extends javax.swing.JFrame {
         // Query the database for the name corresponding to the selected item
         String upit = "OIB";
         ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem, upit));
+        
         for (Korisnik k : odabrano) {
-            Document document = new Document("C:\\Users\\Lorena\\Documents\\potpora.test.docx");
+            Document document = new Document("C:\\Users\\Kristijan\\Desktop\\Ugovor\\ugovor.docx");
 
             // Replace a specific text
             document.replace("<ime>", k.getIme(), false, true);
@@ -154,7 +158,7 @@ public class Pretraga extends javax.swing.JFrame {
             document.replace("<oib>", k.getOIB(), false, true);
 
             //Save the result document
-            document.saveToFile("C:\\Users\\Lorena\\Documents\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
+            document.saveToFile("C:\\Users\\Kristijan\\Desktop\\Ugovor\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
             // txtPoruka.setText(k.getKucniBroj()); }
 
             JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
