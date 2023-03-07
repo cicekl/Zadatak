@@ -2,6 +2,7 @@ ugovor\view\test$2.class
 ugovor\model\Entitet.class
 ugovor\controller\Obrada.class
 ugovor\view\Izbornik$2.class
+ugovor\view\Pretraga$3.class
 ugovor\util\SearchDatabase.class
 ugovor\view\Prozor.class
 ugovor\view\Pretraga$2.class
@@ -14,6 +15,7 @@ ugovor\view\ProzorU.class
 ugovor\view\test$1.class
 ugovor\util\HibernateUtil.class
 ugovor\util\UnosDatuma.class
+ugovor\view\Pretraga$4.class
 ugovor\util\ProbniPodatci.class
 ugovor\view\test$3.class
 ugovor\view\Prozor$1.class

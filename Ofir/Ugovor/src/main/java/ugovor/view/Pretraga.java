@@ -6,6 +6,7 @@ package ugovor.view;
 
 import com.spire.doc.Document;
 import com.spire.doc.FileFormat;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
@@ -50,10 +51,21 @@ public class Pretraga extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        txtUnos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtUnosKeyPressed(evt);
+            }
+        });
+
         btnPretraga.setText("Pretraži");
         btnPretraga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPretragaActionPerformed(evt);
+            }
+        });
+        btnPretraga.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnPretragaKeyPressed(evt);
             }
         });
 
@@ -106,52 +118,49 @@ public class Pretraga extends javax.swing.JFrame {
     private void btnPretragaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPretragaActionPerformed
         lstLista.clearSelection();
         DefaultListModel<String> model = new DefaultListModel<>();
-        JList<String> list = new JList<>( model );
+        JList<String> list = new JList<>(model);
         String s = txtUnos.getText();
         // String upit = "ime";
         ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
-        for(Korisnik k:marija){
-        model.addElement(k.getIme() + " " + k.getPrezime() + " " + k.getOIB());
-        lstLista.setModel(model);
-        // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
+        for (Korisnik k : marija) {
+            model.addElement(k.getIme() + " " + k.getPrezime() + " " + k.getOIB());
+            lstLista.setModel(model);
+            // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
         }
 
 
     }//GEN-LAST:event_btnPretragaActionPerformed
 
     private void btnPohraniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPohraniActionPerformed
-            
-        
-      //  DefaultListModel<String> model = new DefaultListModel<>();
-       // JList<String> list = new JList<>( model );
-       //  String selectedItem = lstLista.getSelectedValue();
-         String selectedItem = lstLista.getSelectedValue();
-         String [] words = selectedItem.split("\\s");
-         selectedItem = words[2];
-    
-    // Query the database for the name corresponding to the selected item
+
+        //  DefaultListModel<String> model = new DefaultListModel<>();
+        // JList<String> list = new JList<>( model );
+        //  String selectedItem = lstLista.getSelectedValue();
+        String selectedItem = lstLista.getSelectedValue();
+        String[] words = selectedItem.split("\\s");
+        selectedItem = words[2];
+
+        // Query the database for the name corresponding to the selected item
         String upit = "OIB";
-        ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem,upit));
-       for(Korisnik k:odabrano){
-        Document document = new Document("C:\\Users\\Lorena\\Documents\\potpora.test.docx");
+        ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem, upit));
+        for (Korisnik k : odabrano) {
+            Document document = new Document("C:\\Users\\Lorena\\Documents\\potpora.test.docx");
 
-        // Replace a specific text
-        document.replace("<ime>", k.getIme(), false, true);
-        document.replace("<prezime>", k.getPrezime(), false, true);
-        document.replace("<adresa>", k.getUlica(), false, true);
-        document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
-        document.replace("<oib>", k.getOIB(), false, true);
-        
-    
+            // Replace a specific text
+            document.replace("<ime>", k.getIme(), false, true);
+            document.replace("<prezime>", k.getPrezime(), false, true);
+            document.replace("<adresa>", k.getUlica(), false, true);
+            document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
+            document.replace("<oib>", k.getOIB(), false, true);
 
-        //Save the result document
-        document.saveToFile("C:\\Users\\Lorena\\Documents\\"+k.getIme()+k.getPrezime()+".docx",FileFormat.Docx); 
-       // txtPoruka.setText(k.getKucniBroj()); }
-       
-       JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
-       
-       }
-       
+            //Save the result document
+            document.saveToFile("C:\\Users\\Lorena\\Documents\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
+            // txtPoruka.setText(k.getKucniBroj()); }
+
+            JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
+
+        }
+
 //            lstLista.addMouseListener(new MouseAdapter() {
 //         public void mouseClicked(MouseEvent me) {
 //            if (me.getClickCount() == 1) {
@@ -166,6 +175,26 @@ public class Pretraga extends javax.swing.JFrame {
 //      });
 
     }//GEN-LAST:event_btnPohraniActionPerformed
+
+    private void btnPretragaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnPretragaKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPretragaKeyPressed
+
+    private void txtUnosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUnosKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            lstLista.clearSelection();
+            DefaultListModel<String> model = new DefaultListModel<>();
+            JList<String> list = new JList<>(model);
+            String s = txtUnos.getText();
+            // String upit = "ime";
+            ArrayList<Korisnik> marija = new ArrayList<Korisnik>(searchDatabase(s));
+            for (Korisnik k : marija) {
+                model.addElement(k.getIme() + " " + k.getPrezime() + " " + k.getOIB());
+                lstLista.setModel(model);
+                // txtRez.setText(k.getIme() + " " + k.getPrezime() + "\n");
+            }
+        }
+    }//GEN-LAST:event_txtUnosKeyPressed
 
     /**
      * @param args the command line arguments
