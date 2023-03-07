@@ -47,7 +47,6 @@ public class Pretraga extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         lstLista = new javax.swing.JList<>();
         btnPohrani = new javax.swing.JButton();
-        txtPoruka = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -68,12 +67,6 @@ public class Pretraga extends javax.swing.JFrame {
             }
         });
 
-        txtPoruka.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPorukaActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,10 +80,8 @@ public class Pretraga extends javax.swing.JFrame {
                         .addGap(73, 73, 73)
                         .addComponent(btnPretraga)))
                 .addGap(68, 68, 68)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtPoruka, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(192, Short.MAX_VALUE))
+                .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(351, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,8 +94,7 @@ public class Pretraga extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnPretraga)
-                            .addComponent(txtPoruka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnPretraga))
                         .addGap(35, 35, 35)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(249, Short.MAX_VALUE))
@@ -178,10 +168,6 @@ public class Pretraga extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnPohraniActionPerformed
 
-    private void txtPorukaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPorukaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPorukaActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -191,7 +177,6 @@ public class Pretraga extends javax.swing.JFrame {
     private javax.swing.JButton btnPretraga;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lstLista;
-    private javax.swing.JTextField txtPoruka;
     private javax.swing.JTextField txtUnos;
     // End of variables declaration//GEN-END:variables
 }
