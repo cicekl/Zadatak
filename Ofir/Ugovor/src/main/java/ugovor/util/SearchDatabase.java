@@ -37,6 +37,25 @@ public class SearchDatabase {
     }
     return results;
 }
+    
+    public static List<Korisnik> searchDatabase(String query) {
+    List<Korisnik> results = new ArrayList<Korisnik>();
+    try {
+        Connection conn = (Connection) DriverManager.getConnection("jdbc:mariadb://localhost/ugovor", "root", "");
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Korisnik WHERE ime LIKE '%" + query + "%' or prezime LIKE '%" + query + "%'");
+        while (rs.next()) {
+            Korisnik korisnik = new Korisnik(rs.getString("ime"), rs.getString("prezime"), rs.getString("OIB"), rs.getString("ulica"), rs.getString("kucniBroj"),rs.getInt("ID"),rs.getString("email"),rs.getString("IBAN"));
+            results.add(korisnik);
+        }
+        rs.close();
+        stmt.close();
+        conn.close();
+    } catch (SQLException e) {
+        System.out.println("Error searching database: " + e.getMessage());
+    }
+    return results;
+}
 
     
     

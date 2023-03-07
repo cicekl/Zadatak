@@ -71,9 +71,9 @@ public class Prozor extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("Oib");
+        jLabel4.setText("OIB");
 
-        jLabel5.setText("Iban");
+        jLabel5.setText("IBAN");
 
         jLabel7.setText("Ulica");
 
