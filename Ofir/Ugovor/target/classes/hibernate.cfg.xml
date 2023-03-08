@@ -17,7 +17,6 @@
     <property name="hbm2ddl.auto">update</property>    
     
         <mapping class="ugovor.model.Korisnik" />
-        <mapping class="ugovor.model.Ugovor" />
 
 
   </session-factory>

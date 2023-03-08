@@ -4,31 +4,7 @@
 
 package ugovor;
 
-import java.awt.List;
-import java.math.BigDecimal;
 import java.text.ParseException;
-import java.util.ArrayList;
-import javax.swing.JOptionPane;
-import javax.xml.parsers.DocumentBuilder;
-import org.hibernate.engine.spi.SessionImplementor;
-import ugovor.controller.ObradaKorisnik;
-import ugovor.model.Korisnik;
-import ugovor.util.OfirException;
-import ugovor.util.ProbniPodatci;
-import ugovor.util.SearchDatabase;
-import static ugovor.util.SearchDatabase.searchDatabase;
-import ugovor.util.UnosDatuma;
-import static ugovor.util.UnosDatuma.UnosDatuma;
-import ugovor.view.Prozor;
-import ugovor.view.ProzorU;
-import ugovor.view.test;
-import org.hibernate.Session;
-
-import ugovor.util.HibernateUtil;
-import ugovor.view.Pretraga;
-
-import com.spire.doc.Document;
-import com.spire.doc.FileFormat;
 import ugovor.view.Izbornik;
 
 

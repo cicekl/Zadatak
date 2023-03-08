@@ -4,41 +4,38 @@
  */
 package ugovor.util;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import us.codecraft.xsoup.Xsoup;
+//import org.jsoup.Jsoup;
+//import org.jsoup.nodes.Document;
+//import us.codecraft.xsoup.Xsoup;
 
 /**
  *
  * @author Lorena
  */
 public class DovlacenjeOIBA {
-    
-     public static String dovuciOib() {
-
-        try {
-        
-            URL url = new URL("http://oib.itcentrala.com/oib-generator/");
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(
-                            url.openStream()));
-            String inputLine;
-            StringBuilder sb = new StringBuilder();
-            while ((inputLine = in.readLine()) != null) {
-                sb.append(inputLine);
-            }
-            in.close();
-             Document d = Jsoup.parse(sb.toString());
-            return Xsoup.compile("/html/body/div[1]/div[1]/text()").evaluate(d).get();
-            
-        } catch (Exception e) {
-        }
-
-        return "";
-    }
+//    
+//     public static String dovuciOib() {
+//
+//        try {
+//        
+//            URL url = new URL("http://oib.itcentrala.com/oib-generator/");
+//            BufferedReader in = new BufferedReader(
+//                    new InputStreamReader(
+//                            url.openStream()));
+//            String inputLine;
+//            StringBuilder sb = new StringBuilder();
+//            while ((inputLine = in.readLine()) != null) {
+//                sb.append(inputLine);
+//            }
+//            in.close();
+//             Document d = Jsoup.parse(sb.toString());
+//            return Xsoup.compile("/html/body/div[1]/div[1]/text()").evaluate(d).get();
+//            
+//        } catch (Exception e) {
+//        }
+//
+//        return "";
+//    }
      
      public static boolean kontrolaOIB(String oib) {
         if (oib==null || oib.length() != 11) {

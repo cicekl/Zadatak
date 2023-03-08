@@ -12,13 +12,8 @@
         <exec.mainClass>ugovor.Start</exec.mainClass>
     </properties>
     
+    
     <repositories> 
-        <repository>
-            <id>AsposeJavaAPI</id>
-            <name>Aspose Java API</name>
-            <url>https://releases.aspose.com/java/repo/</url>
-        </repository>
-        
         <repository>
             <id>com.e-iceblue</id>
             <name>e-iceblue</name>
@@ -35,12 +30,7 @@
             <artifactId>spire.doc.free</artifactId>
             <version>5.2.0</version>
         </dependency>
-        
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
-        </dependency>
+       
         
         <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
         <dependency>
@@ -57,12 +47,13 @@
             <type>pom</type>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <!--         https://mvnrepository.com/artifact/com.github.javafaker/javafaker 
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
-        </dependency>
+        </dependency>-->
+        
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -70,60 +61,58 @@
             <type>jar</type>
         </dependency>
         
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-        <dependency>
+   
+        <!--        <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.14.3</version>
         </dependency>
         
-        <!-- https://mvnrepository.com/artifact/us.codecraft/xsoup -->
+
         <dependency>
             <groupId>us.codecraft</groupId>
             <artifactId>xsoup</artifactId>
             <version>0.3.2</version>
-        </dependency>
+        </dependency>-->
         
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml-schemas</artifactId>
-            <version>4.1.2</version>
-        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <!--         https://mvnrepository.com/artifact/log4j/log4j 
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.aspose</groupId>
-            <artifactId>aspose-words</artifactId>
-            <version>22.11</version>
-            <classifier>jdk17</classifier>
-        </dependency>
-        <dependency>
-            <groupId>com.aspose</groupId>
-            <artifactId>aspose-words</artifactId>
-            <version>22.11</version>
-            <classifier>javadoc</classifier>
-        </dependency>
+        </dependency>-->
 
 
         
     </dependencies>
     <name>Zadatak</name>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>ugovor.Start</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
