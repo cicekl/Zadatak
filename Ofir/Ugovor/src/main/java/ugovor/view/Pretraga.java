@@ -6,8 +6,10 @@ package ugovor.view;
 
 import com.spire.doc.Document;
 import com.spire.doc.FileFormat;
+import java.awt.Desktop;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
@@ -174,12 +176,25 @@ public class Pretraga extends javax.swing.JFrame {
                     File fileToSave = fileChooser.getSelectedFile();
                     String savePath = fileToSave.getAbsolutePath() + File.separator + k.getIme() + k.getPrezime();
                     document.saveToFile(savePath + ".docx", FileFormat.Docx);
-                    // txtPoruka.setText(k.getKucniBroj()); }
-
                     JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
+                    
+                    // txtPoruka.setText(k.getKucniBroj()); }
+                    if (Desktop.isDesktopSupported()) {
+                        try {
+                            File fileToOpen = new File(savePath + ".docx");
+                            Desktop.getDesktop().open(fileToOpen);
+                        } catch (IOException ex) {
+                            JOptionPane.showMessageDialog(getRootPane(), "Datoteka ne postoji!");
+                        }
+                    } 
+                    
+                    
+
+                
 
                 }
-            } }
+            }
+        }
 
 //            lstLista.addMouseListener(new MouseAdapter() {
 //         public void mouseClicked(MouseEvent me) {
