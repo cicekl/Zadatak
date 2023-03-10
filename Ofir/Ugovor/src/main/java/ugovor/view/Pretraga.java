@@ -6,13 +6,9 @@ package ugovor.view;
 
 import com.spire.doc.Document;
 import com.spire.doc.FileFormat;
-import java.awt.Desktop;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
-import javax.swing.JFileChooser;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import ugovor.model.Korisnik;
@@ -30,6 +26,7 @@ public class Pretraga extends javax.swing.JFrame {
     public Pretraga() {
         initComponents();
         setTitle("Pretraga i upis dokumenta");
+       // populateComboBox();
     }
 
     /**
@@ -47,6 +44,7 @@ public class Pretraga extends javax.swing.JFrame {
         lstLista = new javax.swing.JList<>();
         btnPohrani = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        cBoxUgovori = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -80,6 +78,13 @@ public class Pretraga extends javax.swing.JFrame {
 
         jLabel1.setText("Korisnik");
 
+        cBoxUgovori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ugovorPotpora", "ugovorSport" }));
+        cBoxUgovori.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cBoxUgovoriActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,7 +101,9 @@ public class Pretraga extends javax.swing.JFrame {
                                 .addGap(26, 26, 26)
                                 .addComponent(btnPretraga)))
                         .addGap(68, 68, 68)
-                        .addComponent(btnPohrani, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnPohrani, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                            .addComponent(cBoxUgovori, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -109,7 +116,8 @@ public class Pretraga extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtUnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnPretraga))
+                            .addComponent(btnPretraga)
+                            .addComponent(cBoxUgovori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -155,46 +163,32 @@ public class Pretraga extends javax.swing.JFrame {
         ArrayList<Korisnik> odabrano = new ArrayList<Korisnik>(searchDatabase(selectedItem, upit));
 
         for (Korisnik k : odabrano) {
-            JFileChooser fileChooser = new JFileChooser();
-            int result = fileChooser.showOpenDialog(null);
-            if (result == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                String path = selectedFile.getAbsolutePath();
-                Document document = new Document(path);
+            Document document = new Document("C:\\Users\\" + System.getProperty("user.name") + "\\Ugovori\\ugovoriTemplate\\" + cBoxUgovori.getSelectedItem().toString() + ".docx");
 
-                // Replace a specific text
-                document.replace("<ime>", k.getIme(), false, true);
-                document.replace("<prezime>", k.getPrezime(), false, true);
-                document.replace("<adresa>", k.getUlica(), false, true);
-                document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
-                document.replace("<oib>", k.getOIB(), false, true);
+            // Replace a specific text
+            document.replace("<ime>", k.getIme(), false, true);
+            document.replace("<prezime>", k.getPrezime(), false, true);
+            document.replace("<adresa>", k.getUlica(), false, true);
+            document.replace("<iban>", k.getIBAN(), false, true);
+            document.replace("<email>", k.getEmail(), false, true);
+            document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
+            document.replace("<oib>", k.getOIB(), false, true);
 
-                //Save the result document
-                fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                int returnVal = fileChooser.showSaveDialog(null);
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    File fileToSave = fileChooser.getSelectedFile();
-                    String savePath = fileToSave.getAbsolutePath() + File.separator + k.getIme() + k.getPrezime();
-                    document.saveToFile(savePath + ".docx", FileFormat.Docx);
-                    JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
-                    
-                    // txtPoruka.setText(k.getKucniBroj()); }
-                    if (Desktop.isDesktopSupported()) {
-                        try {
-                            File fileToOpen = new File(savePath + ".docx");
-                            Desktop.getDesktop().open(fileToOpen);
-                        } catch (IOException ex) {
-                            JOptionPane.showMessageDialog(getRootPane(), "Datoteka ne postoji!");
-                        }
-                    } 
+            //Save the result document
+            document.saveToFile("C:\\Users\\" + System.getProperty("user.name") + "\\Ugovori\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
+            // txtPoruka.setText(k.getKucniBroj()); }
+
+            JOptionPane.showMessageDialog(null, "Ugovor uspješno popunjen!");
+
+        }
                     
                     
 
                 
 
-                }
-            }
-        }
+                
+//            }
+        
 
 //            lstLista.addMouseListener(new MouseAdapter() {
 //         public void mouseClicked(MouseEvent me) {
@@ -231,13 +225,22 @@ public class Pretraga extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtUnosKeyPressed
 
+    private void cBoxUgovoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBoxUgovoriActionPerformed
+
+    cBoxUgovori.getSelectedItem();
+        
+    }//GEN-LAST:event_cBoxUgovoriActionPerformed
+
     /**
      * @param args the command line arguments
      */
+    
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnPohrani;
     private javax.swing.JButton btnPretraga;
+    private javax.swing.JComboBox<String> cBoxUgovori;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> lstLista;

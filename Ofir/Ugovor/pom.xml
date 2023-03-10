@@ -20,7 +20,7 @@
             <url>https://repo.e-iceblue.com/nexus/content/groups/public/</url>
         </repository>
     </repositories>
-    
+   
     
     
     <dependencies>
@@ -45,6 +45,15 @@
             <version>6.1.7.Final</version>
             <type>jar</type>
         </dependency>
+    
+        <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
         
     </dependencies>
     <name>Zadatak</name>

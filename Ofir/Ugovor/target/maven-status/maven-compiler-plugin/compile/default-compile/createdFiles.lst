@@ -1,5 +1,6 @@
 ugovor\model\Entitet.class
 ugovor\controller\Obrada.class
+ugovor\view\Pretraga$5.class
 ugovor\view\Pretraga$4.class
 ugovor\view\Izbornik$2.class
 ugovor\view\Pretraga$3.class
@@ -15,5 +16,6 @@ ugovor\util\OfirException.class
 ugovor\view\Izbornik.class
 ugovor\model\Korisnik.class
 ugovor\controller\ObradaKorisnik.class
+ugovor\controller\UgovoriServlet.class
 ugovor\util\HibernateUtil.class
 ugovor\view\Pretraga$1.class
