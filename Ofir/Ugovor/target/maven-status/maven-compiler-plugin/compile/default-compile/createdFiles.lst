@@ -16,6 +16,5 @@ ugovor\util\OfirException.class
 ugovor\view\Izbornik.class
 ugovor\model\Korisnik.class
 ugovor\controller\ObradaKorisnik.class
-ugovor\controller\UgovoriServlet.class
 ugovor\util\HibernateUtil.class
 ugovor\view\Pretraga$1.class
